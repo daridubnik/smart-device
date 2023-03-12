@@ -1,0 +1,57 @@
+.header {
+  min-height: 120px;
+  background-color: $color-black-pearl;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.header__logo {
+  margin: 0 15px 0 0;
+  padding: 30px 0 35px 0;
+}
+
+.header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  display: flex;
+  min-width: 225px;
+  margin: 0 27px 0 0;
+  padding: 45px 0 55px 0;
+  line-height: 18px;
+  color: $color-alice-blue;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.header__link-icon {
+  margin: 0 15px 0 0;
+  color: $color-deep-sky-blue;
+}
+
+.header__button {
+  text-align: center;
+  padding: 35px 0 45px 0;
+  color: $color-alice-blue;
+}
+
+.header__button-text {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  padding: 10px 15px;
+  letter-spacing: 0.7px;
+  border: 1px solid $color-alice-blue;
+  border-radius: 3px;
+}
+
