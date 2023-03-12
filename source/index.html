@@ -20,8 +20,11 @@
       <div class="container">
         <div class="header__wrapper ">
           <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="./img/logo/logo-full.svg" width="215" height="55"
-              alt="Логотип Smart Device.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/logo/logo-full.svg">
+              <img class="header__logo-image" src="./img/logo/logo-mobile.svg" width="35" height="35"
+                alt="Логотип Smart Device.">
+            </picture>
           </a>
           <div class="header__contacts">
             <a class="header__link" href="mailto:info@sd.ru">
