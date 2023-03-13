@@ -1,0 +1,49 @@
+.promo {
+  min-height: 880px;
+  background-color: $color-cinder;
+  background-image: url("../../img/background/promo-desktop.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background/promo-desktop@2x.jpg");
+    background-size: 1920px auto;
+  }
+}
+
+.promo__wrapper {
+  margin: auto;
+  padding: 305px 50px 280px 50px;
+  max-width: 1070px;
+}
+
+.promo__wrapper h2 {
+  margin: 0 0 30px 0;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 5.7px;
+  font-family: $ff-roboto-condensed;
+  color: $color-alice-blue;
+  text-transform: uppercase;
+}
+
+.promo__wrapper p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 34.5px;
+  color: $color-alice-blue;
+}
+
+.promo__button {
+  text-align: center;
+  margin: 47px 0 0 0;
+  width: 410px;
+  height: 55px;
+  background-color: $color-deep-sky-blue;
+  color: $color-alice-blue;
+}
+
+.promo__button-text {
+  display: inline-block;
+  padding: 15px 25px;
+}
