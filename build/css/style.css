@@ -428,6 +428,7 @@ html {
   font-size: 16px;
   line-height: 22px;
   font-family: "PT Mono", "Arial", sans-serif;
+  background-color: #ebebeb;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1200,7 +1201,7 @@ button,
   position: fixed;
   width: 100%;
   min-height: 120px;
-  background-color: rgba(4, 24, 39, 0.7);
+  background-color: rgb(4, 24, 39);
 }
 
 .header__wrapper {
@@ -1466,6 +1467,17 @@ button,
   height: 55px;
   background-color: #00b2ff;
   color: #f2f5f6;
+}
+
+.promo__button:hover,
+.promo__button:focus {
+  background-color: #abe6ff;
+  color: rgb(4, 24, 39);
+}
+
+.promo__button:active {
+  background-color: #f2f5f6;
+  color: rgb(4, 24, 39);
 }
 
 .promo__button-text {

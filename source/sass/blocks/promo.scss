@@ -41,6 +41,17 @@
   height: 55px;
   background-color: $color-deep-sky-blue;
   color: $color-alice-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $color-columbia-blue;
+    color: $color-black-pearl;
+  }
+
+  &:active {
+    background-color: $color-alice-blue;
+    color: $color-black-pearl;
+  }
 }
 
 .promo__button-text {
