@@ -1434,6 +1434,7 @@ button,
   background-color: #1e2b33;
   background-image: url("../../img/background/promo-desktop.jpg");
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .promo__wrapper {
@@ -1480,9 +1481,18 @@ button,
   color: rgb(4, 24, 39);
 }
 
+.promo__button:disabled {
+  background-color: #747474;
+  color: #f2f5f6;
+}
+
 .promo__button-text {
   display: inline-block;
   padding: 15px 25px;
+}
+
+.promo__button-text-mobile {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -1538,7 +1548,7 @@ button,
   }
 
   .header {
-    position: static;
+    position: absolute;
     min-height: 100px;
   }
 
@@ -1570,6 +1580,36 @@ button,
 
   .header__button {
     display: none;
+  }
+
+  .promo {
+    min-height: 640px;
+    background-image: url("../../img/background/promo-tablet.jpg");
+    background-size: 100% auto;
+    background-position: 0 -100px;
+  }
+
+  .promo__wrapper {
+    margin: 0 auto 0 0;
+    padding: 180px 0 205px 0;
+    max-width: 670px;
+  }
+
+  .promo__wrapper h2 {
+    margin: 0;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4.5px;
+  }
+
+  .promo__button {
+    margin: 56px 0 0 45px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../../img/background/promo-tablet@2x.jpg");
   }
 }
 
@@ -1610,6 +1650,53 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .promo {
+    min-height: 560px;
+    background-image: url("../../img/background/promo-mobile.jpg");
+    background-size: 100% auto;
+    background-position: 0;
+  }
+
+  .promo__wrapper {
+    padding: 150px 0 190px 0;
+    max-width: 400px;
+  }
+
+  .promo__wrapper h2 {
+    margin: 0 0 7px 0;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 2.5px;
+  }
+
+  .promo__wrapper p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+  .promo__wrapper br {
+    display: none;
+  }
+
+  .promo__button {
+    width: 270px;
+    height: 40px;
+    margin: 45px 0 0 0;
+  }
+
+  .promo__button-text {
+    display: none;
+  }
+
+  .promo__button-text-mobile {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -1673,6 +1760,13 @@ button,
 
   .custom-toggle:last-of-type {
     padding: 14px 0 58px 0;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../../img/background/promo-mobile@2x.jpg");
+    background-size: 1220px auto;
   }
 }
 
