@@ -2,6 +2,14 @@
   margin: 0 auto;
   padding: 120px 0;
   max-width: 1222px;
+
+  @include vp-1023 {
+    padding: 80px 0;
+  }
+
+  @include vp-767 {
+    padding: 50px 0;
+  }
 }
 
 .advantages__wrapper ul {
@@ -11,6 +19,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .advantages__wrapper li {
@@ -25,6 +42,18 @@
     background-color: $color-deep-sky-blue;
     color: $color-alice-blue;
   }
+
+  @include vp-1023 {
+    padding: 39px 30px 30px 40px;
+    min-height: 360px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+    padding: 29px 25px 35px 25px;
+    max-width: 568px;
+    min-height: 340px;
+  }
 }
 
 .advantages__wrapper li:hover p {
@@ -33,6 +62,15 @@
 
 .advantages__wrapper svg {
   margin: 0 0 16px 0;
+
+  @include vp-1023 {
+    margin: 0 0 10px 0;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .advantages__wrapper h3 {
@@ -41,9 +79,29 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+
+  @include vp-1023 {
+    margin: 0 0 9px 0;
+    line-height: 33.7px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .advantages__wrapper p {
   margin: 0;
   color: $color-black-pearl;
+
+  @include vp-1023 {
+    line-height: 21.6px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
+
