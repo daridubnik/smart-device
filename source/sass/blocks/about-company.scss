@@ -1,0 +1,120 @@
+.about-company__wrapper {
+  margin: 0 auto;
+  padding: 60px 0 100px 0;
+  max-width: 1220px;
+
+  @include vp-1023 {
+    padding: 35px 0 80px 0;
+  }
+
+  @include vp-767 {
+    padding: 22px 0 80px 0;
+  }
+}
+
+.about-company__content-wrapper {
+  padding: 0 0 0 250px;
+  min-height: 320px;
+  background-color: inherit;
+  background-image: url("../../img/background/about-company.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background/about-company@2x.png");
+    background-size: 150px 320px;
+  }
+
+  @include vp-1023 {
+    padding: 0 0 0 175px;
+    background-position: -4px 5px;
+  }
+
+  @include vp-767 {
+    min-height: 0;
+    background-image: none;
+    padding: 0;
+  }
+}
+
+.about-company__content-wrapper h2 {
+  margin: 0 0 12px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  font-family: $ff-roboto-condensed;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.about-company__content-wrapper p {
+  margin: 0 0 22px 0;
+  line-height: 21.5px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 18px 0;
+    font-size: 14px;
+    line-height: 18.9px;
+  }
+}
+
+.about-company__content-wrapper span {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about-company__content-wrapper button {
+  display: block;
+  margin: 39px 0 0 0;
+  padding: 14px 12px;
+  width: 180px;
+  height: 45px;
+  font-weight: 700;
+  font-family: $ff-roboto-condensed;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  background-color: inherit;
+  color: $color-deep-sky-blue;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-columbia-blue;
+    color: $color-black-pearl;
+    border: 1px solid $color-columbia-blue;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue;
+    color: $color-alice-blue;
+    border: 1px solid $color-deep-sky-blue;
+  }
+
+  &:disabled {
+    background-color: $color-dim-gray;
+    color: $color-alice-blue;
+    border: 1px solid $color-dim-gray;
+  }
+
+  @include vp-1023 {
+    margin: 18px 0 0 0;
+  }
+
+  @include vp-767 {
+    margin: 14px 0 0 0;
+    padding: 8px 15px;
+    width: 160px;
+    height: 35px;
+  }
+}
