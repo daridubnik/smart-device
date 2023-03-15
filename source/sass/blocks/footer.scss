@@ -158,6 +158,7 @@
 
 .footer__links button {
   display: none;
+  cursor: pointer;
 
   @include vp-767 {
     position: absolute;
@@ -189,6 +190,13 @@
       height: 15px;
       background-color: $color-default-white-opacity;
     }
+  }
+}
+
+.footer__site-navigation.is-active > button,
+.footer__contacts.is-active > button {
+  &::before {
+    content: none;
   }
 }
 
@@ -278,6 +286,10 @@
   }
 }
 
+.footer__contacts p {
+  letter-spacing: 0.6px;
+}
+
 .footer__contacts address {
   margin: 0 0 8px 0;
   font-style: normal;
@@ -299,4 +311,3 @@
 .footer__contacts li {
   margin: 0 0 8px 0;
 }
-

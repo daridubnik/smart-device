@@ -173,13 +173,13 @@
               </li>
             </ul>
           </div>
-          <div class="footer__links">
-            <div class="footer__site-navigation">
+          <div class="footer__links" data-accordion="parent" data-single="data-single" data-destroy="(max-width: 767px)">
+            <div class="footer__site-navigation" data-accordion="element">
               <p>Разделы сайта</p>
-              <button type="button">
+              <button type="button" data-accordion="button">
                 <span class="visually-hidden">Открыть/закрыть</span>
               </button>
-              <nav>
+              <nav data-accordion="content">
                 <ul>
                   <li>
                     <a href="#">О Компании</a>
@@ -205,11 +205,12 @@
                 </ul>
               </nav>
             </div>
-            <div class="footer__contacts">
+            <div class="footer__contacts" data-accordion="element">
               <p>Наш офис</p>
-              <button type="button">
+              <button type="button" data-accordion="button">
                 <span class="visually-hidden">Открыть/закрыть</span>
               </button>
+              <div data-accordion="content">
               <address>г. Мытищи, Олимпийский проспект, д.10</address>
               <ul>
                 <li>
@@ -222,6 +223,7 @@
                   <a href="tel:+79253647813">+7 (925) 364-78-13</a>
                 </li>
               </ul>
+            </div>
             </div>
           </div>
         </div>

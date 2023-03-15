@@ -1248,6 +1248,24 @@ button,
   color: #15ab07;
 }
 
+[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
 .footer {
   min-height: 280px;
   background-color: #041827;
@@ -1347,6 +1365,12 @@ button,
 
 .footer__links button {
   display: none;
+  cursor: pointer;
+}
+
+.footer__site-navigation.is-active > button::before,
+.footer__contacts.is-active > button::before {
+  content: none;
 }
 
 .footer__site-navigation {
@@ -1383,6 +1407,10 @@ button,
 .footer__contacts {
   position: relative;
   max-width: 345px;
+}
+
+.footer__contacts p {
+  letter-spacing: 0.6px;
 }
 
 .footer__contacts address {
