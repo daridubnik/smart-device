@@ -1248,6 +1248,137 @@ button,
   color: #15ab07;
 }
 
+.footer {
+  min-height: 280px;
+  background-color: #041827;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px 0 55px 0;
+  max-width: 1220px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__social a {
+  margin: 0 0 30px 0;
+}
+
+.footer__social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 0 10px;
+  padding: 0;
+  max-width: 150px;
+  list-style-type: none;
+}
+
+.footer__social svg {
+  color: #f8fdff;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 845px;
+}
+
+.footer__links p {
+  margin: 0 0 20px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__links a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__social svg:hover,
+.footer__social svg:focus,
+.footer__links a:hover,
+.footer__links a:focus {
+  color: #abe6ff;
+}
+
+.footer__social svg:active,
+.footer__links a:active {
+  color: #00b2ff;
+}
+
+.footer__social svg:disabled,
+.footer__links a:disabled {
+  color: #747474;
+}
+
+.footer__site-navigation {
+  width: 470px;
+}
+
+.footer__site-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-height: 160px;
+}
+
+.footer__site-navigation li {
+  margin: 0 0 10px 0;
+  max-width: 220px;
+}
+
+.footer__site-navigation a {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.footer__contacts address {
+  margin: 0 0 10px 0;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__contacts li {
+  margin: 0 0 10px 0;
+}
+
 .header {
   position: fixed;
   width: 100%;
