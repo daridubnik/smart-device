@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -624,9 +625,6 @@ button,
   margin: 0 0 22px 0;
   line-height: 21.5px;
 }
-.about-company__content-wrapper p:last-child {
-  margin: 0;
-}
 @media (max-width: 767px) {
   .about-company__content-wrapper p {
     margin: 0 0 18px 0;
@@ -643,7 +641,7 @@ button,
 
 .about-company__content-wrapper button {
   display: block;
-  margin: 39px 0 0 0;
+  margin: 19px 0 0 0;
   padding: 14px 12px;
   width: 180px;
   height: 45px;
@@ -676,16 +674,28 @@ button,
 }
 @media (max-width: 1023px) {
   .about-company__content-wrapper button {
-    margin: 18px 0 0 0;
+    margin: -4px 0 0 0;
   }
 }
 @media (max-width: 767px) {
   .about-company__content-wrapper button {
-    margin: 14px 0 0 0;
+    margin: -5px 0 0 0;
     padding: 8px 15px;
     width: 160px;
     height: 35px;
   }
+}
+
+.about-company__element button::before {
+  content: "Подробнее";
+}
+
+.about-company__element.is-active button::before {
+  content: "Свернуть";
+}
+
+.about-company__element.is-active span {
+  display: inline;
 }
 
 .advantages__wrapper {
