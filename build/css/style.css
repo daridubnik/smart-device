@@ -726,7 +726,7 @@ button,
 }
 @media (max-width: 1023px) {
   .advantages__wrapper ul {
-    gap: 30px;
+    gap: 30px 32px;
   }
 }
 @media (max-width: 767px) {
@@ -820,6 +820,34 @@ button,
   .advantages__wrapper p {
     font-size: 14px;
     line-height: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages__wrapper li:nth-child(3n),
+.advantages__wrapper li:nth-child(4n) {
+    min-height: 325px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages__wrapper li:nth-child(3n) svg,
+.advantages__wrapper li:nth-child(4n) svg {
+    margin: 0 0 13px 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .advantages__wrapper li:nth-child(3n) h3,
+.advantages__wrapper li:nth-child(4n) h3 {
+    line-height: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__wrapper li:nth-child(3n) h3,
+.advantages__wrapper li:nth-child(4n) h3 {
+    margin: 0 0 13px 0;
+    line-height: 28.1px;
   }
 }
 
