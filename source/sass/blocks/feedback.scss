@@ -1,0 +1,155 @@
+.feedback {
+  position: relative;
+  background-color: $color-deep-sky-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: $color-black-pearl;
+    opacity: 0.5;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+  }
+}
+
+.feedback__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 165px 0 249px 625px;
+  max-width: 1220px;
+  color: $color-default-white;
+  background-color: inherit;
+  background-image: url("../../img/background/paper-airplane.png");
+  background-repeat: no-repeat;
+  background-position: 0 246px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background/paper-airplane@2x.png");
+    background-size: 510px 285px;
+  }
+}
+
+.feedback__wrapper h3 {
+  margin: 0 0 12px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50.6px;
+  font-family: $ff-roboto-condensed;
+}
+
+.feedback__wrapper p {
+  margin: 0 0 35px 5px;
+}
+
+.feedback__form {
+  margin: 0 0 0 5px;
+  max-width: 580px;
+}
+
+.feedback__form-fieldset-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 0 20px 0;
+}
+
+.feedback__form input,
+.feedback__form textarea {
+  display: block;
+  padding: 15px 15px 16px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  background-color: $color-black-pearl-opacity;
+  color: $color-default-white;
+}
+
+.feedback__form textarea {
+  padding: 25px 15px 20px 15px;
+}
+
+.feedback__form input::-moz-placeholder,
+.feedback__form textarea::-moz-placeholder {
+  color: $color-default-white;
+}
+
+.feedback__form input::-webkit-input-placeholder,
+.feedback__form textarea::-webkit-input-placeholder {
+  color: $color-default-white;
+}
+
+.feedback__form-bottom-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 35px 0 0 0;
+}
+
+.feedback__form button {
+  display: block;
+  padding: 15px 25px;
+  width: 265px;
+  height: 45px;
+  font-weight: 700;
+  font-family: $ff-roboto-condensed;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18.8px;
+  letter-spacing: 0.9px;
+  color: $color-default-white;
+  background-color: $color-black-pearl;
+  border: none;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-columbia-blue;
+    color: $color-black-pearl;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-black-pearl;
+  }
+
+  &:disabled {
+    background-color: $color-dim-gray;
+    color: $color-alice-blue;
+  }
+}
+
+.feedback__form-bottom-block label {
+  position: relative;
+  display: block;
+  margin: 15px 4px 0 0;
+  padding: 0 0 0 25px;
+  max-width: 260px;
+  cursor: pointer;
+}
+
+.feedback__form-control-mark {
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 1px;
+}
+
+.feedback__form-bottom-block label:hover .feedback__form-control-mark {
+  border: 1px solid $color-black-pearl;
+}
+
+.feedback__form-control-label {
+  display: block;
+  font-size: 14px;
+  line-height: 15.7px;
+}
+
