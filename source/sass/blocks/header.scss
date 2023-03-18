@@ -2,7 +2,8 @@
   position: fixed;
   width: 100%;
   min-height: 120px;
-  background-color: $color-black-pearl;
+  background: $black-pearl-to-bottom;
+  background-color: $color-default-black-opacity;
   z-index: 2;
 
   @include vp-1023 {
@@ -41,7 +42,7 @@
   }
 }
 
-.header__logo-image {
+.header__logo img {
   width: 215px;
   height: 55px;
 
@@ -64,7 +65,7 @@
   }
 }
 
-.header__link {
+.header__contacts a {
   display: flex;
   min-width: 223px;
   margin: 30px 35px 40px -5px;
@@ -87,24 +88,24 @@
   }
 }
 
-.header__link:hover .header__link-icon,
-.header__link:hover .header__link-text,
-.header__link:focus .header__link-icon,
-.header__link:focus .header__link-text {
+a:hover svg,
+a:hover span,
+a:focus svg,
+a:focus span {
   color: $color-columbia-blue;
 }
 
-.header__link:active .header__link-icon,
-.header__link:active .header__link-text {
+a:active svg,
+a:active span {
   color: $color-deep-sky-blue;
 }
 
-.header__link:disabled .header__link-icon,
-.header__link:disabled .header__link-text {
+a:disabled svg,
+a:disabled span {
   color: $color-dim-gray;
 }
 
-.header__link-icon {
+.header__contacts svg {
   margin: 0 15px 0 0;
   color: $color-deep-sky-blue;
 
@@ -113,7 +114,7 @@
   }
 }
 
-.header__link-text {
+.header__contacts span {
   @include vp-1023 {
     display: none;
   }
