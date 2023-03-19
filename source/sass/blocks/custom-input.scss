@@ -5,11 +5,11 @@
   &.is-invalid {
     input,
     textarea {
-      outline: 1px solid $color-black-pearl;
+      outline: 1px solid $color-cerise;
 
       &:focus,
       &:hover {
-        outline: 1px solid rgba($color-black-pearl, 0.5);
+        outline: 1.5px solid $color-cerise;
       }
     }
   }
@@ -27,6 +27,8 @@
   }
 
   &--checkbox {
+    display: flex;
+
     .input-message {
       top: 2px;
     }
