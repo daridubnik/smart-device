@@ -240,8 +240,9 @@
   }
 }
 
-.custom-input--checkbox label {
+.modal__form-checkbox-block label {
   position: relative;
+  padding: 0 0 0 34px;
   display: block;
   cursor: pointer;
 }

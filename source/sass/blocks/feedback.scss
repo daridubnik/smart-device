@@ -185,6 +185,7 @@
   background-color: $color-black-pearl;
   border: none;
   border-radius: 3px;
+  user-select: none;
 
   @include vp-1023 {
     padding: 16px 25px;

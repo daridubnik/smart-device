@@ -657,6 +657,23 @@ button,
   border: 1px solid #00b2ff;
   border-radius: 3px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1023px) {
+  .about-company__content-wrapper button {
+    margin: -4px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-company__content-wrapper button {
+    margin: -5px 0 0 0;
+    padding: 8px 15px;
+    width: 160px;
+    height: 35px;
+  }
 }
 .about-company__content-wrapper button:hover, .about-company__content-wrapper button:focus {
   background-color: #abe6ff;
@@ -672,19 +689,6 @@ button,
   background-color: #747474;
   color: #f2f5f6;
   border: 1px solid #747474;
-}
-@media (max-width: 1023px) {
-  .about-company__content-wrapper button {
-    margin: -4px 0 0 0;
-  }
-}
-@media (max-width: 767px) {
-  .about-company__content-wrapper button {
-    margin: -5px 0 0 0;
-    padding: 8px 15px;
-    width: 160px;
-    height: 35px;
-  }
 }
 
 .about-company__element button::before {
@@ -750,10 +754,6 @@ button,
   border-left: 5px solid #00b2ff;
   color: #00b2ff;
 }
-.advantages__wrapper li:hover {
-  background-color: #00b2ff;
-  color: #f2f5f6;
-}
 @media (max-width: 1023px) {
   .advantages__wrapper li {
     padding: 39px 30px 30px 40px;
@@ -767,6 +767,10 @@ button,
     max-width: 568px;
     min-height: 340px;
   }
+}
+.advantages__wrapper li:hover {
+  background-color: #00b2ff;
+  color: #f2f5f6;
 }
 
 .advantages__wrapper li:hover p {
@@ -1551,6 +1555,10 @@ button,
   background-color: #041827;
   border: none;
   border-radius: 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1023px) {
   .feedback__form button {
@@ -2157,6 +2165,10 @@ button,
   line-height: 16px;
   text-transform: uppercase;
   color: #f2f5f6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1023px) {
   .header__button {
@@ -2429,8 +2441,9 @@ button,
   color: #f2f5f6;
 }
 
-.custom-input--checkbox label {
+.modal__form-checkbox-block label {
   position: relative;
+  padding: 0 0 0 34px;
   display: block;
   cursor: pointer;
 }
@@ -2853,18 +2866,10 @@ label:hover .modal__form-control-mark {
   background-color: #00b2ff;
   color: #f2f5f6;
   border-radius: 3px;
-}
-.promo__wrapper a:hover, .promo__wrapper a:focus {
-  background-color: #abe6ff;
-  color: #041827;
-}
-.promo__wrapper a:active {
-  background-color: #f2f5f6;
-  color: #041827;
-}
-.promo__wrapper a:disabled {
-  background-color: #747474;
-  color: #f2f5f6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1023px) {
   .promo__wrapper a {
@@ -2877,6 +2882,18 @@ label:hover .modal__form-control-mark {
     height: 40px;
     margin: 45px 0 0 0;
   }
+}
+.promo__wrapper a:hover, .promo__wrapper a:focus {
+  background-color: #abe6ff;
+  color: #041827;
+}
+.promo__wrapper a:active {
+  background-color: #f2f5f6;
+  color: #041827;
+}
+.promo__wrapper a:disabled {
+  background-color: #747474;
+  color: #f2f5f6;
 }
 
 .promo__button-text {

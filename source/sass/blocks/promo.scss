@@ -107,6 +107,17 @@
   background-color: $color-deep-sky-blue;
   color: $color-alice-blue;
   border-radius: 3px;
+  user-select: none;
+
+  @include vp-1023 {
+    margin: 56px 0 0 45px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+    height: 40px;
+    margin: 45px 0 0 0;
+  }
 
   &:hover,
   &:focus {
@@ -122,16 +133,6 @@
   &:disabled {
     background-color: $color-dim-gray;
     color: $color-alice-blue;
-  }
-
-  @include vp-1023 {
-    margin: 56px 0 0 45px;
-  }
-
-  @include vp-767 {
-    width: 270px;
-    height: 40px;
-    margin: 45px 0 0 0;
   }
 }
 
