@@ -212,6 +212,12 @@
   }
 }
 
+.feedback__form-checkbox {
+  position: absolute;
+  top: 23px;
+  left: 0;
+}
+
 .feedback__form-bottom-block label {
   position: relative;
   display: block;
@@ -239,7 +245,7 @@
   border-radius: 1px;
 }
 
-input[type="checkbox"]:checked + .feedback__form-control-mark::before {
+.feedback__form-checkbox input[type="checkbox"]:checked + .feedback__form-control-mark::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -259,4 +265,3 @@ input[type="checkbox"]:checked + .feedback__form-control-mark::before {
   font-size: 14px;
   line-height: 15.7px;
 }
-

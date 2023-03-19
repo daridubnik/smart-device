@@ -15,12 +15,12 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 50px 0 55px 0;
+  padding: 50px 0 43px 0;
   max-width: 1220px;
 
   @include vp-1023 {
     flex-direction: column;
-    padding: 50px 0 65px 0;
+    padding: 50px 0 54px 0;
   }
 
   @include vp-767 {

@@ -63,26 +63,31 @@
 }
 
 .products__wrapper li {
-  position: relative;
-  padding: 47px 40px;
   max-width: 350px;
   height: 650px;
 
   @include vp-1023 {
-    padding: 37px 45px;
     max-width: none;
     height: 250px;
+  }
+}
+
+.products__wrapper div {
+  position: relative;
+  padding: 47px 40px;
+  width: 100%;
+  height: 100%;
+  background-color: $color-black-pearl;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @include vp-1023 {
+    padding: 37px 45px;
   }
 
   @include vp-767 {
     padding: 26px 30px;
   }
-}
-
-.products__card {
-  background-color: $color-black-pearl;
-  background-repeat: no-repeat;
-  background-position: 50%;
 
   @media (min-resolution: 2dppx) {
     background-size: auto 650px;
@@ -91,76 +96,76 @@
       background-size: 100% auto;
     }
   }
+}
 
-  &--first {
-    background-image: url("../../img/poducts/production-desktop.jpg");
+.products__card-first {
+  background-image: url("../../img/poducts/production-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/poducts/production-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../../img/poducts/production-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/poducts/production-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../../img/poducts/production-tablet.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/poducts/production-tablet@2x.jpg");
-      }
-    }
-
-    @include vp-767 {
-      background-image: url("../../img/poducts/production-mobile.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/poducts/production-mobile@2x.jpg");
-      }
+      background-image: url("../../img/poducts/production-tablet@2x.jpg");
     }
   }
 
-  &--second {
-    background-image: url("../../img/poducts/mounting-desktop.jpg");
+  @include vp-767 {
+    background-image: url("../../img/poducts/production-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/poducts/mounting-desktop@2x.jpg");
+      background-image: url("../../img/poducts/production-mobile@2x.jpg");
     }
+  }
+}
 
-    @include vp-1023 {
-      background-image: url("../../img/poducts/mounting-tablet.jpg");
+.products__card-second {
+  background-image: url("../../img/poducts/mounting-desktop.jpg");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/poducts/mounting-tablet@2x.jpg");
-      }
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/poducts/mounting-desktop@2x.jpg");
+  }
 
-    @include vp-767 {
-      background-image: url("../../img/poducts/mounting-mobile.jpg");
+  @include vp-1023 {
+    background-image: url("../../img/poducts/mounting-tablet.jpg");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/poducts/mounting-mobile@2x.jpg");
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/poducts/mounting-tablet@2x.jpg");
     }
   }
 
-  &--third {
-    background-image: url("../../img/poducts/accessories-desktop.jpg");
+  @include vp-767 {
+    background-image: url("../../img/poducts/mounting-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/poducts/accessories-desktop@2x.jpg");
+      background-image: url("../../img/poducts/mounting-mobile@2x.jpg");
     }
+  }
+}
 
-    @include vp-1023 {
-      background-image: url("../../img/poducts/accessories-tablet.jpg");
+.products__card-third {
+  background-image: url("../../img/poducts/accessories-desktop.jpg");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/poducts/accessories-tablet@2x.jpg");
-      }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/poducts/accessories-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../../img/poducts/accessories-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/poducts/accessories-tablet@2x.jpg");
     }
+  }
 
-    @include vp-767 {
-      background-image: url("../../img/poducts/accessories-mobile.jpg");
+  @include vp-767 {
+    background-image: url("../../img/poducts/accessories-mobile.jpg");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/poducts/accessories-mobile@2x.jpg");
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/poducts/accessories-mobile@2x.jpg");
     }
   }
 }

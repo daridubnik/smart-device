@@ -27,6 +27,8 @@
   }
 
   &--checkbox {
+    display: flex;
+
     .input-message {
       top: 2px;
     }
