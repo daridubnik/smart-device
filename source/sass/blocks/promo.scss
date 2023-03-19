@@ -92,13 +92,21 @@
   }
 }
 
-.promo__button {
+.promo__wrapper a {
   text-align: center;
+  display: block;
   margin: 47px 0 0 0;
   width: 410px;
   height: 55px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
   background-color: $color-deep-sky-blue;
   color: $color-alice-blue;
+  border-radius: 3px;
 
   &:hover,
   &:focus {
@@ -146,4 +154,9 @@
     line-height: 16px;
     letter-spacing: 0.7px;
   }
+}
+
+a:hover span,
+a:focus span {
+  color: $color-black-pearl;
 }

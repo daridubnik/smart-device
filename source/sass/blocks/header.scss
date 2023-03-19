@@ -88,20 +88,20 @@
   }
 }
 
-a:hover svg,
-a:hover span,
-a:focus svg,
-a:focus span {
+.header__wrapper a:hover svg,
+.header__wrapper a:hover span,
+.header__wrapper a:focus svg,
+.header__wrapper a:focus span {
   color: $color-columbia-blue;
 }
 
-a:active svg,
-a:active span {
+.header__wrapper a:active svg,
+.header__wrapper a:active span {
   color: $color-deep-sky-blue;
 }
 
-a:disabled svg,
-a:disabled span {
+.header__wrapper a:disabled svg,
+.header__wrapper a:disabled span {
   color: $color-dim-gray;
 }
 
@@ -122,42 +122,22 @@ a:disabled span {
 
 .header__button {
   text-align: center;
+  display: block;
   margin: 20px 0 30px 0;
   padding: 15px 0;
+  font-weight: 700;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
   color: $color-alice-blue;
-
-  &:hover,
-  &:focus {
-    color: $color-columbia-blue;
-  }
-
-  &:active {
-    color: $color-deep-sky-blue;
-  }
-
-  &:disabled {
-    color: $color-dim-gray;
-  }
 
   @include vp-1023 {
     display: none;
   }
 }
 
-.header__button:hover .header__button-text,
-.header__button:focus .header__button-text {
-  border: 1px solid $color-columbia-blue;
-}
-
-.header__button:active .header__button-text {
-  border: 1px solid $color-deep-sky-blue;
-}
-
-.header__button:disabled .header__button-text {
-  border: 1px solid $color-dim-gray;
-}
-
-.header__button-text {
+.header__button span {
   display: inline-block;
   width: 160px;
   height: 40px;
@@ -165,4 +145,17 @@ a:disabled span {
   letter-spacing: 0.7px;
   border: 1px solid $color-alice-blue;
   border-radius: 3px;
+}
+
+.header__button:hover span,
+.header__button:focus span {
+  border: 1px solid $color-columbia-blue;
+}
+
+.header__button:active span {
+  border: 1px solid $color-deep-sky-blue;
+}
+
+.header__button:disabled span {
+  border: 1px solid $color-dim-gray;
 }

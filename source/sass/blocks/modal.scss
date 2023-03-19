@@ -176,6 +176,19 @@
   font-family: inherit;
   background-color: $color-black-pearl-opacity;
   color: $color-default-white;
+
+  &:hover {
+    outline: 1px solid $color-black-pearl;
+  }
+
+  &:focus {
+    outline: 1.5px solid $color-black-pearl;
+  }
+
+  &:disabled {
+    background-color: $color-dim-gray;
+    opacity: 0.4;
+  }
 }
 
 .modal__form textarea {

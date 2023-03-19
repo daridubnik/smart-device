@@ -893,23 +893,6 @@ button,
   opacity: 0.8;
 }
 
-.button {
-  display: block;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  text-transform: uppercase;
-}
-.button--primary {
-  font-size: 14px;
-  line-height: 16px;
-}
-.button--secondary {
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.9px;
-  border-radius: 3px;
-}
-
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -918,7 +901,7 @@ button,
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  outline: 1px solid #041827;
+  outline: 1px solid #d92a70;
 }
 .custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:focus,
@@ -927,7 +910,7 @@ button,
 .custom-textarea.is-invalid input:hover,
 .custom-textarea.is-invalid textarea:focus,
 .custom-textarea.is-invalid textarea:hover {
-  outline: 1px solid rgba(4, 24, 39, 0.5);
+  outline: 1.5px solid #d92a70;
 }
 .custom-input .input-message,
 .custom-textarea .input-message {
@@ -1490,6 +1473,19 @@ button,
 .feedback__form textarea {
     margin: 0 0 20px 0;
   }
+}
+.feedback__form input:hover,
+.feedback__form textarea:hover {
+  outline: 1px solid #041827;
+}
+.feedback__form input:focus,
+.feedback__form textarea:focus {
+  outline: 1.5px solid #041827;
+}
+.feedback__form input:disabled,
+.feedback__form textarea:disabled {
+  background-color: #747474;
+  opacity: 0.4;
 }
 
 .feedback__form textarea {
@@ -2105,20 +2101,20 @@ input[type=checkbox]:checked + .feedback__form-control-mark::before {
   }
 }
 
-a:hover svg,
-a:hover span,
-a:focus svg,
-a:focus span {
+.header__wrapper a:hover svg,
+.header__wrapper a:hover span,
+.header__wrapper a:focus svg,
+.header__wrapper a:focus span {
   color: #abe6ff;
 }
 
-a:active svg,
-a:active span {
+.header__wrapper a:active svg,
+.header__wrapper a:active span {
   color: #00b2ff;
 }
 
-a:disabled svg,
-a:disabled span {
+.header__wrapper a:disabled svg,
+.header__wrapper a:disabled span {
   color: #747474;
 }
 
@@ -2140,18 +2136,15 @@ a:disabled span {
 
 .header__button {
   text-align: center;
+  display: block;
   margin: 20px 0 30px 0;
   padding: 15px 0;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
   color: #f2f5f6;
-}
-.header__button:hover, .header__button:focus {
-  color: #abe6ff;
-}
-.header__button:active {
-  color: #00b2ff;
-}
-.header__button:disabled {
-  color: #747474;
 }
 @media (max-width: 1023px) {
   .header__button {
@@ -2159,20 +2152,7 @@ a:disabled span {
   }
 }
 
-.header__button:hover .header__button-text,
-.header__button:focus .header__button-text {
-  border: 1px solid #abe6ff;
-}
-
-.header__button:active .header__button-text {
-  border: 1px solid #00b2ff;
-}
-
-.header__button:disabled .header__button-text {
-  border: 1px solid #747474;
-}
-
-.header__button-text {
+.header__button span {
   display: inline-block;
   width: 160px;
   height: 40px;
@@ -2180,6 +2160,19 @@ a:disabled span {
   letter-spacing: 0.7px;
   border: 1px solid #f2f5f6;
   border-radius: 3px;
+}
+
+.header__button:hover span,
+.header__button:focus span {
+  border: 1px solid #abe6ff;
+}
+
+.header__button:active span {
+  border: 1px solid #00b2ff;
+}
+
+.header__button:disabled span {
+  border: 1px solid #747474;
 }
 
 .modal {
@@ -2364,6 +2357,19 @@ a:disabled span {
   font-family: inherit;
   background-color: rgba(4, 20, 39, 0.15);
   color: #ffffff;
+}
+.modal__form input:hover,
+.modal__form textarea:hover {
+  outline: 1px solid #041827;
+}
+.modal__form input:focus,
+.modal__form textarea:focus {
+  outline: 1.5px solid #041827;
+}
+.modal__form input:disabled,
+.modal__form textarea:disabled {
+  background-color: #747474;
+  opacity: 0.4;
 }
 
 .modal__form textarea {
@@ -2812,33 +2818,41 @@ label:hover .modal__form-control-mark {
   }
 }
 
-.promo__button {
+.promo__wrapper a {
   text-align: center;
+  display: block;
   margin: 47px 0 0 0;
   width: 410px;
   height: 55px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
   background-color: #00b2ff;
   color: #f2f5f6;
+  border-radius: 3px;
 }
-.promo__button:hover, .promo__button:focus {
+.promo__wrapper a:hover, .promo__wrapper a:focus {
   background-color: #abe6ff;
   color: #041827;
 }
-.promo__button:active {
+.promo__wrapper a:active {
   background-color: #f2f5f6;
   color: #041827;
 }
-.promo__button:disabled {
+.promo__wrapper a:disabled {
   background-color: #747474;
   color: #f2f5f6;
 }
 @media (max-width: 1023px) {
-  .promo__button {
+  .promo__wrapper a {
     margin: 56px 0 0 45px;
   }
 }
 @media (max-width: 767px) {
-  .promo__button {
+  .promo__wrapper a {
     width: 270px;
     height: 40px;
     margin: 45px 0 0 0;
@@ -2866,6 +2880,11 @@ label:hover .modal__form-control-mark {
     line-height: 16px;
     letter-spacing: 0.7px;
   }
+}
+
+a:hover span,
+a:focus span {
+  color: #041827;
 }
 
 /* @mixin hover-focus {
