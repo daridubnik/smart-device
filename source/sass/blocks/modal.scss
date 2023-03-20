@@ -165,121 +165,33 @@
   margin: 0 0 38px 0;
 }
 
-.modal__form input,
-.modal__form textarea {
-  display: block;
-  margin: 0 0 20px 0;
-  padding: 15px 15px 16px 15px;
-  width: 100%;
-  border: none;
-  border-radius: 3px;
-  font-family: inherit;
-  background-color: $color-black-pearl-opacity;
-  color: $color-default-white;
-
-  &:hover {
-    outline: 1px solid $color-black-pearl;
-  }
-
-  &:focus {
-    outline: 1.5px solid $color-black-pearl;
-  }
-
-  &:disabled {
-    background-color: $color-dim-gray;
-    opacity: 0.4;
-  }
+.modal__form {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 0;
 }
 
-.modal__form textarea {
-  margin: 0 0 25px 0;
-  padding: 25px 15px 20px 15px;
-}
-
-.modal__form input::-moz-placeholder,
-.modal__form textarea::-moz-placeholder {
-  color: $color-default-white;
-}
-
-.modal__form input::-webkit-input-placeholder,
-.modal__form textarea::-webkit-input-placeholder {
-  color: $color-default-white;
+.modal__form .form__textarea {
+  grid-column-end: 2;
 }
 
 .modal__form button {
-  display: block;
-  margin: 0 0 20px 0;
-  padding: 15px 25px;
-  width: 100%;
-  height: 45px;
-  font-weight: 700;
-  font-family: $ff-roboto-condensed;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18.8px;
-  letter-spacing: 0.9px;
-  color: $color-default-white;
-  background-color: $color-black-pearl;
-  border: none;
-  border-radius: 3px;
-
-  &:hover,
-  &:focus {
-    background-color: $color-columbia-blue;
-    color: $color-black-pearl;
-  }
-
-  &:active {
-    background-color: $color-default-white;
-    color: $color-black-pearl;
-  }
-
-  &:disabled {
-    background-color: $color-dim-gray;
-    color: $color-alice-blue;
-  }
+  margin: 5px 0 0 0;
+  max-width: 100%;
 }
 
-.modal__form-checkbox-block label {
-  position: relative;
+.modal__form .form__checkbox label {
+  margin: 0;
   padding: 0 0 0 34px;
-  display: block;
-  cursor: pointer;
+  max-width: 100%;
 }
 
-.modal__form-control-mark {
-  position: absolute;
-  top: 1px;
+.modal__form .form__control-mark {
+  top: 0;
   left: 9px;
-  width: 15px;
-  height: 15px;
-  border: 1px solid $color-default-white;
-  border-radius: 1px;
 }
 
-input[type="checkbox"]:checked + .modal__form-control-mark::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 2px;
-  width: 9px;
-  height: 5px;
-  background-image: url("../../img/svg/checked.svg");
-  background-repeat: no-repeat;
-}
-
-label:hover .modal__form-control-mark {
-  border: 1px solid $color-black-pearl;
-}
-
-.modal__form-control-label {
-  display: block;
-  font-size: 14px;
-  line-height: 15.7px;
-}
-
-.modal__form {
-  .input-message {
-    top: -15px;
-  }
+.modal__form .input-message {
+  top: -15px;
+  left: 35px;
 }
