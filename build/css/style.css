@@ -1987,6 +1987,10 @@ button,
   border: 1px solid #041827;
 }
 
+.form__checkbox input:focus + .form__control-mark {
+  border: 1.5px solid #041827;
+}
+
 .form__control-label {
   display: block;
   font-size: 14px;
