@@ -38,11 +38,6 @@
   border-left: 5px solid $color-deep-sky-blue;
   color: $color-deep-sky-blue;
 
-  &:hover {
-    background-color: $color-deep-sky-blue;
-    color: $color-alice-blue;
-  }
-
   @include vp-1023 {
     padding: 39px 30px 30px 40px;
     min-height: 360px;
@@ -53,6 +48,11 @@
     padding: 29px 25px 35px 25px;
     max-width: 568px;
     min-height: 340px;
+  }
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+    color: $color-alice-blue;
   }
 }
 
@@ -142,4 +142,3 @@
     line-height: 28.1px;
   }
 }
-
