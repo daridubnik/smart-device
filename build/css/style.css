@@ -585,14 +585,10 @@ button,
   padding: 0 0 0 250px;
   min-height: 320px;
   background-color: inherit;
-  background-image: url("../../img/background/about-company.png");
+  background-image: -webkit-image-set(url("../../img/background/about-company@2x.webp") 2x, url("../../img/background/about-company.webp") 1x, url("../../img/background/about-company@2x.png") 2x, url("../../img/background/about-company.png") 1x);
+  background-image: image-set(url("../../img/background/about-company@2x.webp") 2x, url("../../img/background/about-company.webp") 1x, url("../../img/background/about-company@2x.png") 2x, url("../../img/background/about-company.png") 1x);
   background-repeat: no-repeat;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .about-company__content-wrapper {
-    background-image: url("../../img/background/about-company@2x.png");
-    background-size: 150px 320px;
-  }
+  background-size: 150px 320px;
 }
 @media (max-width: 1023px) {
   .about-company__content-wrapper {
@@ -1378,15 +1374,11 @@ button,
   max-width: 1220px;
   color: #ffffff;
   background-color: inherit;
-  background-image: url("../../img/background/paper-airplane.png");
+  background-image: -webkit-image-set(url("../../img/background/paper-airplane@2x.webp") 2x, url("../../img/background/paper-airplane.webp") 1x, url("../../img/background/paper-airplane@2x.png") 2x, url("../../img/background/paper-airplane.png") 1x);
+  background-image: image-set(url("../../img/background/paper-airplane@2x.webp") 2x, url("../../img/background/paper-airplane.webp") 1x, url("../../img/background/paper-airplane@2x.png") 2x, url("../../img/background/paper-airplane.png") 1x);
   background-repeat: no-repeat;
   background-position: 0 246px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .feedback__wrapper {
-    background-image: url("../../img/background/paper-airplane@2x.png");
-    background-size: 510px 285px;
-  }
+  background-size: 510px 285px;
 }
 @media (max-width: 1023px) {
   .feedback__wrapper {
@@ -2598,89 +2590,53 @@ label:hover .modal__form-control-mark {
 }
 
 .products__card-first {
-  background-image: url("../../img/poducts/production-desktop.jpg");
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .products__card-first {
-    background-image: url("../../img/poducts/production-desktop@2x.jpg");
-  }
+  background-image: -webkit-image-set(url("../../img/products/production-desktop@2x.webp") 2x, url("../../img/products/production-desktop.webp") 1x, url("../../img/products/production-desktop@2x.jpg") 2x, url("../../img/products/production-desktop.jpg") 1x);
+  background-image: image-set(url("../../img/products/production-desktop@2x.webp") 2x, url("../../img/products/production-desktop.webp") 1x, url("../../img/products/production-desktop@2x.jpg") 2x, url("../../img/products/production-desktop.jpg") 1x);
 }
 @media (max-width: 1023px) {
   .products__card-first {
-    background-image: url("../../img/poducts/production-tablet.jpg");
-  }
-}
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
-  .products__card-first {
-    background-image: url("../../img/poducts/production-tablet@2x.jpg");
+    background-image: -webkit-image-set(url("../../img/products/production-tablet@2x.webp") 2x, url("../../img/products/production-tablet.webp") 1x, url("../../img/products/production-tablet@2x.jpg") 2x, url("../../img/products/production-tablet.jpg") 1x);
+    background-image: image-set(url("../../img/products/production-tablet@2x.webp") 2x, url("../../img/products/production-tablet.webp") 1x, url("../../img/products/production-tablet@2x.jpg") 2x, url("../../img/products/production-tablet.jpg") 1x);
   }
 }
 @media (max-width: 767px) {
   .products__card-first {
-    background-image: url("../../img/poducts/production-mobile.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
-  .products__card-first {
-    background-image: url("../../img/poducts/production-mobile@2x.jpg");
+    background-image: -webkit-image-set(url("../../img/products/production-mobile@2x.webp") 2x, url("../../img/products/production-mobile.webp") 1x, url("../../img/products/production-mobile@2x.jpg") 2x, url("../../img/products/production-mobile.jpg") 1x);
+    background-image: image-set(url("../../img/products/production-mobile@2x.webp") 2x, url("../../img/products/production-mobile.webp") 1x, url("../../img/products/production-mobile@2x.jpg") 2x, url("../../img/products/production-mobile.jpg") 1x);
   }
 }
 
 .products__card-second {
-  background-image: url("../../img/poducts/mounting-desktop.jpg");
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .products__card-second {
-    background-image: url("../../img/poducts/mounting-desktop@2x.jpg");
-  }
+  background-image: -webkit-image-set(url("../../img/products/mounting-desktop@2x.webp") 2x, url("../../img/products/mounting-desktop.webp") 1x, url("../../img/products/mounting-desktop@2x.jpg") 2x, url("../../img/products/mounting-desktop.jpg") 1x);
+  background-image: image-set(url("../../img/products/mounting-desktop@2x.webp") 2x, url("../../img/products/mounting-desktop.webp") 1x, url("../../img/products/mounting-desktop@2x.jpg") 2x, url("../../img/products/mounting-desktop.jpg") 1x);
 }
 @media (max-width: 1023px) {
   .products__card-second {
-    background-image: url("../../img/poducts/mounting-tablet.jpg");
-  }
-}
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
-  .products__card-second {
-    background-image: url("../../img/poducts/mounting-tablet@2x.jpg");
+    background-image: -webkit-image-set(url("../../img/products/mounting-tablet@2x.webp") 2x, url("../../img/products/mounting-tablet.webp") 1x, url("../../img/products/mounting-tablet@2x.jpg") 2x, url("../../img/products/mounting-tablet.jpg") 1x);
+    background-image: image-set(url("../../img/products/mounting-tablet@2x.webp") 2x, url("../../img/products/mounting-tablet.webp") 1x, url("../../img/products/mounting-tablet@2x.jpg") 2x, url("../../img/products/mounting-tablet.jpg") 1x);
   }
 }
 @media (max-width: 767px) {
   .products__card-second {
-    background-image: url("../../img/poducts/mounting-mobile.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
-  .products__card-second {
-    background-image: url("../../img/poducts/mounting-mobile@2x.jpg");
+    background-image: -webkit-image-set(url("../../img/products/mounting-mobile@2x.webp") 2x, url("../../img/products/mounting-mobile.webp") 1x, url("../../img/products/mounting-mobile@2x.jpg") 2x, url("../../img/products/mounting-mobile.jpg") 1x);
+    background-image: image-set(url("../../img/products/mounting-mobile@2x.webp") 2x, url("../../img/products/mounting-mobile.webp") 1x, url("../../img/products/mounting-mobile@2x.jpg") 2x, url("../../img/products/mounting-mobile.jpg") 1x);
   }
 }
 
 .products__card-third {
-  background-image: url("../../img/poducts/accessories-desktop.jpg");
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .products__card-third {
-    background-image: url("../../img/poducts/accessories-desktop@2x.jpg");
-  }
+  background-image: -webkit-image-set(url("../../img/products/accessories-desktop@2x.webp") 2x, url("../../img/products/accessories-desktop.webp") 1x, url("../../img/products/accessories-desktop@2x.jpg") 2x, url("../../img/products/accessories-desktop.jpg") 1x);
+  background-image: image-set(url("../../img/products/accessories-desktop@2x.webp") 2x, url("../../img/products/accessories-desktop.webp") 1x, url("../../img/products/accessories-desktop@2x.jpg") 2x, url("../../img/products/accessories-desktop.jpg") 1x);
 }
 @media (max-width: 1023px) {
   .products__card-third {
-    background-image: url("../../img/poducts/accessories-tablet.jpg");
-  }
-}
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
-  .products__card-third {
-    background-image: url("../../img/poducts/accessories-tablet@2x.jpg");
+    background-image: -webkit-image-set(url("../../img/products/accessories-tablet@2x.webp") 2x, url("../../img/products/accessories-tablet.webp") 1x, url("../../img/products/accessories-tablet@2x.jpg") 2x, url("../../img/products/accessories-tablet.jpg") 1x);
+    background-image: image-set(url("../../img/products/accessories-tablet@2x.webp") 2x, url("../../img/products/accessories-tablet.webp") 1x, url("../../img/products/accessories-tablet@2x.jpg") 2x, url("../../img/products/accessories-tablet.jpg") 1x);
   }
 }
 @media (max-width: 767px) {
   .products__card-third {
-    background-image: url("../../img/poducts/accessories-mobile.jpg");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
-  .products__card-third {
-    background-image: url("../../img/poducts/accessories-mobile@2x.jpg");
+    background-image: -webkit-image-set(url("../../img/products/accessories-mobile@2x.webp") 2x, url("../../img/products/accessories-mobile.webp") 1x, url("../../img/products/accessories-mobile@2x.jpg") 2x, url("../../img/products/accessories-mobile.jpg") 1x);
+    background-image: image-set(url("../../img/products/accessories-mobile@2x.webp") 2x, url("../../img/products/accessories-mobile.webp") 1x, url("../../img/products/accessories-mobile@2x.jpg") 2x, url("../../img/products/accessories-mobile.jpg") 1x);
   }
 }
 
@@ -2750,38 +2706,26 @@ label:hover .modal__form-control-mark {
 .promo {
   min-height: 880px;
   background-color: #041827;
-  background-image: url("../../img/background/promo-desktop.jpg");
+  background-image: -webkit-image-set(url("../../img/background/promo-desktop@2x.webp") 2x, url("../../img/background/promo-desktop.webp") 1x, url("../../img/background/promo-desktop@2x.jpg") 2x, url("../../img/background/promo-desktop.jpg") 1x);
+  background-image: image-set(url("../../img/background/promo-desktop@2x.webp") 2x, url("../../img/background/promo-desktop.webp") 1x, url("../../img/background/promo-desktop@2x.jpg") 2x, url("../../img/background/promo-desktop.jpg") 1x);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .promo {
-    background-image: url("../../img/background/promo-desktop@2x.jpg");
-  }
-}
 @media (max-width: 1023px) {
   .promo {
     min-height: 640px;
-    background-image: url("../../img/background/promo-tablet.jpg");
+    background-image: -webkit-image-set(url("../../img/background/promo-tablet@2x.webp") 2x, url("../../img/background/promo-tablet.webp") 1x, url("../../img/background/promo-tablet@2x.jpg") 2x, url("../../img/background/promo-tablet.jpg") 1x);
+    background-image: image-set(url("../../img/background/promo-tablet@2x.webp") 2x, url("../../img/background/promo-tablet.webp") 1x, url("../../img/background/promo-tablet@2x.jpg") 2x, url("../../img/background/promo-tablet.jpg") 1x);
     background-size: cover;
-  }
-}
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
-  .promo {
-    background-image: url("../../img/background/promo-tablet@2x.jpg");
   }
 }
 @media (max-width: 767px) {
   .promo {
     min-height: 560px;
-    background-image: url("../../img/background/promo-mobile.jpg");
+    background-image: -webkit-image-set(url("../../img/background/promo-mobile@2x.webp") 2x, url("../../img/background/promo-mobile.webp") 1x, url("../../img/background/promo-mobile@2x.jpg") 2x, url("../../img/background/promo-mobile.jpg") 1x);
+    background-image: image-set(url("../../img/background/promo-mobile@2x.webp") 2x, url("../../img/background/promo-mobile.webp") 1x, url("../../img/background/promo-mobile@2x.jpg") 2x, url("../../img/background/promo-mobile.jpg") 1x);
     background-size: cover;
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
-  .promo {
-    background-image: url("../../img/background/promo-mobile@2x.jpg");
   }
 }
 

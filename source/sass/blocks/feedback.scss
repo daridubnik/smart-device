@@ -30,14 +30,15 @@
   max-width: 1220px;
   color: $color-default-white;
   background-color: inherit;
-  background-image: url("../../img/background/paper-airplane.png");
+  background-image: image-set(
+    url("../../img/background/paper-airplane@2x.webp") 2x,
+    url("../../img/background/paper-airplane.webp") 1x,
+    url("../../img/background/paper-airplane@2x.png") 2x,
+    url("../../img/background/paper-airplane.png") 1x
+  );
   background-repeat: no-repeat;
   background-position: 0 246px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background/paper-airplane@2x.png");
-    background-size: 510px 285px;
-  }
+  background-size: 510px 285px;
 
   @include vp-1023 {
     padding: 45px 0 125px 0;
