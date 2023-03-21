@@ -24,23 +24,28 @@
             </picture>
           </a>
           <div class="header__contacts">
-            <a href="mailto:info@sd.ru">
-              <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Конверт">
-                <use href="./img/sprite.svg#icon-letter"></use>
-              </svg>
-              <span>info@sd.ru</span>
-            </a>
-            <a href="tel:+74950005252">
-              <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Телефонная трубка">
-                <use href="./img/sprite.svg#icon-phone"></use>
-              </svg>
-              <span>+7 (495) 000 52 52</span>
-            </a>
+            <div class="header__contacts-link">
+              <a href="mailto:info@sd.ru">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Конверт">
+                  <use href="./img/sprite.svg#icon-letter"></use>
+                </svg>
+                <span>info@sd.ru</span>
+              </a>
+            </div>
+            <div class="header__contacts-link">
+              <a href="tel:+74950005252">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Телефонная трубка">
+                  <use href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+                <span>+7 (495) 000 52 52</span>
+              </a>
+            </div>
           </div>
-          <a class="header__button" href="#" data-open-modal="modal">
-            <span>Заказать звонок</span></a>
+          <div class="header__button">
+            <a href="#" data-open-modal="modal">Заказать звонок</a>
+          </div>
         </div>
       </div>
     </header>
@@ -63,39 +68,47 @@
             <h2 class="visually-hidden">Преимещества</h2>
             <ul>
               <li>
-                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Секундомер">
-                  <use href="./img/sprite.svg#icon-stopwatch"></use>
-                </svg>
-                <h3>Оперативные сроки</h3>
-                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить
-                  и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки.</p>
+                <div class="advantages__item">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Секундомер">
+                    <use href="./img/sprite.svg#icon-stopwatch"></use>
+                  </svg>
+                  <h3>Оперативные сроки</h3>
+                  <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить
+                    и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки.</p>
+                </div>
               </li>
               <li>
-                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Группа людей">
-                  <use href="./img/sprite.svg#icon-people"></use>
-                </svg>
-                <h3>Крупные поставщики</h3>
-                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                  Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+                <div class="advantages__item">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Группа людей">
+                    <use href="./img/sprite.svg#icon-people"></use>
+                  </svg>
+                  <h3>Крупные поставщики</h3>
+                  <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                    Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+                </div>
               </li>
               <li>
-                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Шляпа и очки">
-                  <use href="./img/sprite.svg#icon-hat"></use>
-                </svg>
-                <h3>Полная конфиденциальность</h3>
-                <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
+                <div class="advantages__item advantages__item--even-pair">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Шляпа и очки">
+                    <use href="./img/sprite.svg#icon-hat"></use>
+                  </svg>
+                  <h3>Полная конфиденциальность</h3>
+                  <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
+                </div>
               </li>
               <li>
-                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Ценник">
-                  <use href="./img/sprite.svg#icon-price-tag"></use>
-                </svg>
-                <h3>Персонализация стоимости</h3>
-                <p>Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену,
-                  которая Вас устраивает.</p>
+                <div class="advantages__item advantages__item--even-pair">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Ценник">
+                    <use href="./img/sprite.svg#icon-price-tag"></use>
+                  </svg>
+                  <h3>Персонализация стоимости</h3>
+                  <p>Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену,
+                    которая Вас устраивает.</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -117,16 +130,20 @@
                     крупнейшие Производители светотехники России.</span>
                 </p>
                 <div data-accordion="content">
-                  <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
-                    1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день.
-                    На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов
-                    присутствия.</p>
-                  <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции,
-                    производимой внутри компании. Использование инновационных технологий помогает экономить деньги
-                    и&nbsp;время наших клиентов.
-                  </p>
+                  <div>
+                    <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
+                      1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день.
+                      На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране
+                      и&nbsp;20&nbsp;городов
+                      присутствия.</p>
+                    <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции,
+                      производимой внутри компании. Использование инновационных технологий помогает экономить деньги
+                      и&nbsp;время наших клиентов.
+                    </p>
+                  </div>
                 </div>
-                <button type="button" data-accordion="button" aria-label="Показать/скрыть текст"></button>
+                <button type="button" data-accordion="button" data-show-more="Подробнее" data-show-less="Свернуть"
+                  aria-label="Показать/скрыть текст"></button>
               </div>
             </div>
           </div>
@@ -141,27 +158,18 @@
               <li>
                 <div class="products__card-first">
                   <h3>Производство печатных плат</h3>
-                  <button type="button">
-                    <span class="visually-hidden">Перейти</span>
-                  </button>
                   <a href="#" aria-label="Перейти в раздел"></a>
                 </div>
               </li>
               <li>
                 <div class="products__card-second">
                   <h3>Монтаж печатных плат</h3>
-                  <button type="button">
-                    <span class="visually-hidden">Перейти</span>
-                  </button>
                   <a href="#" aria-label="Перейти в раздел"></a>
                 </div>
               </li>
               <li>
                 <div class="products__card-third">
                   <h3>Комплектующие для светотехники</h3>
-                  <button type="button">
-                    <span class="visually-hidden">Перейти</span>
-                  </button>
                   <a href="#" aria-label="Перейти в раздел"></a>
                 </div>
               </li>
@@ -196,7 +204,7 @@
                     <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
                   </label>
                 </div>
-                <button>Задать вопрос</button>
+                <button type="submit">Задать вопрос</button>
                 <div class="custom-input custom-input--checkbox form__checkbox" data-validate-type="checkbox"
                   data-message-base="Необходимо согласие">
                   <label>
@@ -330,9 +338,9 @@
                   <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
                 </label>
               </div>
-              <button>Отправить</button>
-              <div class="custom-input custom-input--checkbox form__checkbox" data-validate-type="checkbox"
-                data-message-base="Необходимо согласие">
+              <button type="submit">Отправить</button>
+              <div class="custom-input custom-input--checkbox form__checkbox form__checkbox--modal"
+                data-validate-type="checkbox" data-message-base="Необходимо согласие">
                 <label>
                   <input type="checkbox" name="consent" value="agree" checked required>
                   <span class="form__control-mark"></span>

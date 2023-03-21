@@ -117,16 +117,12 @@
   }
 }
 
-.about-company__element button {
-  &::before {
-    content: "Подробнее";
-  }
+.about-company__element button::before {
+  content: attr(data-show-more);
 }
 
-.about-company__element.is-active button {
-  &::before {
-    content: "Свернуть";
-  }
+.about-company__element.is-active button::before {
+  content: attr(data-show-less);
 }
 
 .about-company__element.is-active span {

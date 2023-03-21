@@ -55,9 +55,11 @@
 .header__contacts {
   display: flex;
   flex-wrap: wrap;
+  min-width: 481px;
 
   @include vp-1023 {
     margin: 0 20px 0 0;
+    min-width: 100px;
   }
 
   @include vp-767 {
@@ -65,43 +67,47 @@
   }
 }
 
-.header__contacts a {
-  display: flex;
-  min-width: 223px;
-  margin: 30px 35px 40px -5px;
-  padding: 15px 0;
-  line-height: 18px;
-  color: $color-alice-blue;
-
-  &:last-child {
-    margin-right: 0;
-  }
+.header__contacts-link {
+  min-width: 229px;
+  margin: 30px 23px 40px 0;
 
   @include vp-1023 {
     min-width: 40px;
-    margin: 20px 18px 40px 0;
+    margin: 5px 18px 25px 0;
     padding: 10px;
   }
 
   @include vp-767 {
-    margin: 10px 18px 20px 0;
+    margin: 0 18px 10px 0;
+    padding: 5px 10px;
   }
 }
 
-.header__wrapper a:hover svg,
-.header__wrapper a:hover span,
-.header__wrapper a:focus svg,
-.header__wrapper a:focus span {
+.header__contacts .header__contacts-link:last-child {
+  margin-right: 0;
+}
+
+.header__contacts a {
+  display: flex;
+  padding: 15px 0;
+  line-height: 18px;
+  color: $color-alice-blue;
+}
+
+.header__contacts-link:hover span,
+.header__contacts-link:hover svg,
+.header__contacts-link:focus span,
+.header__contacts-link:focus svg {
   color: $color-columbia-blue;
 }
 
-.header__wrapper a:active svg,
-.header__wrapper a:active span {
+.header__contacts-link:active span,
+.header__contacts-link:active svg {
   color: $color-deep-sky-blue;
 }
 
-.header__wrapper a:disabled svg,
-.header__wrapper a:disabled span {
+.header__contacts-link:disabled span,
+.header__contacts-link:disabled svg {
   color: $color-dim-gray;
 }
 
@@ -121,42 +127,42 @@
 }
 
 .header__button {
-  text-align: center;
-  display: block;
-  margin: 20px 0 30px 0;
-  padding: 15px 0;
-  font-weight: 700;
-  font-family: $ff-roboto-condensed;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: $color-alice-blue;
-  user-select: none;
-
   @include vp-1023 {
     display: none;
   }
 }
 
-.header__button span {
+.header__button a {
   display: inline-block;
+  margin: 20px 0 30px 0;
+  padding: 10px;
   width: 160px;
   height: 40px;
-  padding: 10px 15px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.7px;
+  text-transform: uppercase;
+  user-select: none;
+  text-align: center;
+  color: $color-alice-blue;
   border: 1px solid $color-alice-blue;
   border-radius: 3px;
 }
 
-.header__button:hover span,
-.header__button:focus span {
+.header__button a:hover,
+.header__button a:focus {
+  color: $color-columbia-blue;
   border: 1px solid $color-columbia-blue;
 }
 
-.header__button:active span {
+.header__button a:active {
+  color: $color-deep-sky-blue;
   border: 1px solid $color-deep-sky-blue;
 }
 
-.header__button:disabled span {
+.header__button a:disabled {
+  color: $color-dim-gray;
   border: 1px solid $color-dim-gray;
 }
