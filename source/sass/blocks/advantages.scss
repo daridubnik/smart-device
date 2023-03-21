@@ -30,7 +30,7 @@
   }
 }
 
-.advantages__wrapper li {
+.advantages__item {
   padding: 39px 41px 35px 41px;
   max-width: 595px;
   min-height: 300px;
@@ -56,11 +56,11 @@
   }
 }
 
-.advantages__wrapper li:hover p {
+.advantages__item:hover p {
   color: $color-alice-blue;
 }
 
-.advantages__wrapper svg {
+.advantages__item svg {
   margin: 0 0 16px 0;
 
   @include vp-1023 {
@@ -73,7 +73,7 @@
   }
 }
 
-.advantages__wrapper h3 {
+.advantages__item h3 {
   margin: 0 0 13px 0;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
@@ -91,7 +91,7 @@
   }
 }
 
-.advantages__wrapper p {
+.advantages__item p {
   margin: 0;
   color: $color-black-pearl;
 
@@ -105,34 +105,34 @@
   }
 }
 
-.advantages__wrapper li:nth-child(3n),
-.advantages__wrapper li:nth-child(4n) {
+.advantages__item:nth-child(3n),
+.advantages__item:nth-child(4n) {
   @include vp-767 {
     min-height: 325px;
   }
 }
 
-.advantages__wrapper li:nth-child(4n) svg {
+.advantages__item:nth-child(4n) svg {
   @include vp-1023 {
     margin: 0 0 7px 0;
   }
 }
 
-.advantages__wrapper li:nth-child(3n) svg,
-.advantages__wrapper li:nth-child(4n) svg {
+.advantages__item:nth-child(3n) svg,
+.advantages__item:nth-child(4n) svg {
   @include vp-767 {
     margin: 0 0 13px 0;
   }
 }
 
-.advantages__wrapper li:nth-child(4n) h3 {
+.advantages__item:nth-child(4n) h3 {
   @include vp-1023 {
     margin: 0 0 7px 0;
   }
 }
 
-.advantages__wrapper li:nth-child(3n) h3,
-.advantages__wrapper li:nth-child(4n) h3 {
+.advantages__item:nth-child(3n) h3,
+.advantages__item:nth-child(4n) h3 {
   @include vp-1023 {
     line-height: 32px;
   }
