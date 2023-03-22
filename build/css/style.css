@@ -1422,7 +1422,7 @@ button,
 }
 @media (max-width: 767px) {
   .footer {
-    min-height: 360px;
+    min-height: 325px;
   }
 }
 
