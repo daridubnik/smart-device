@@ -745,6 +745,7 @@ button,
   padding: 39px 41px 35px 41px;
   max-width: 595px;
   min-height: 300px;
+  height: 100%;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
   color: #00b2ff;
@@ -1686,36 +1687,36 @@ button,
 }
 
 .footer__site-navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
   min-width: 470px;
-  max-height: 160px;
+  -webkit-columns: 2 220px;
+     -moz-columns: 2 220px;
+          columns: 2 220px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 @media (max-width: 1023px) {
   .footer__site-navigation ul {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    min-width: -webkit-min-content;
-    min-width: -moz-min-content;
-    min-width: min-content;
-    max-height: -webkit-min-content;
-    max-height: -moz-min-content;
-    max-height: min-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 220px;
   }
 }
 @media (max-width: 767px) {
   .footer__site-navigation ul {
     margin: -5px 0 12px 0;
   }
+}
+
+.footer__site-navigation li:nth-child(3n) {
+  -webkit-column-break-after: avoid;
+     -moz-column-break-after: avoid;
+          break-after: avoid;
 }
 
 .footer__site-navigation li {
@@ -1764,7 +1765,7 @@ button,
 }
 @media (max-width: 767px) {
   .footer__contacts address {
-    margin: -5px 0 17px 0;
+    margin: -4px 0 17px 0;
     font-size: 14px;
     line-height: 19px;
   }
@@ -1828,7 +1829,7 @@ button,
   border-radius: 3px;
   font-family: inherit;
   background-color: rgba(4, 20, 39, 0.15);
-  color: #ffffff;
+  color: #041827;
 }
 .form input:hover,
 .form textarea:hover {
@@ -1889,6 +1890,7 @@ button,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
   .form button {
@@ -2032,6 +2034,7 @@ button,
 
 .header__logo {
   margin: 20px 15px 25px 0;
+  min-width: 215px;
   padding: 10px 0;
 }
 @media (max-width: 1023px) {
@@ -2042,6 +2045,7 @@ button,
 @media (max-width: 767px) {
   .header__logo {
     margin: 5px 0 10px 1px;
+    min-width: 35px;
   }
 }
 
@@ -2481,6 +2485,12 @@ button,
     background-image: -webkit-image-set(url("../../img/products/production-mobile@2x.webp") 2x, url("../../img/products/production-mobile.webp") 1x, url("../../img/products/production-mobile@2x.jpg") 2x, url("../../img/products/production-mobile.jpg") 1x);
     background-image: image-set(url("../../img/products/production-mobile@2x.webp") 2x, url("../../img/products/production-mobile.webp") 1x, url("../../img/products/production-mobile@2x.jpg") 2x, url("../../img/products/production-mobile.jpg") 1x);
   }
+}
+.products__wrapper li:hover, .products__wrapper li:focus {
+  outline: 1px solid #abe6ff;
+}
+.products__wrapper li:active {
+  outline: 1px solid #00b2ff;
 }
 
 .products__wrapper li:nth-child(3n-1) {

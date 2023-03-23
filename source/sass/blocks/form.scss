@@ -35,7 +35,7 @@
   border-radius: 3px;
   font-family: inherit;
   background-color: $color-black-pearl-opacity;
-  color: $color-default-white;
+  color: $color-black-pearl;
 
   &:hover {
     outline: 1px solid $color-black-pearl;
@@ -91,6 +91,7 @@
   border: none;
   border-radius: 3px;
   user-select: none;
+  cursor: pointer;
 
   @include vp-1023 {
     padding: 16px 15px;
