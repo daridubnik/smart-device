@@ -93,6 +93,15 @@
       url("../../img/products/production-mobile.jpg") 1x
     );
   }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-columbia-blue;
+  }
+
+  &:active {
+    outline: 1px solid $color-deep-sky-blue;
+  }
 }
 
 .products__wrapper li:nth-child(3n-1) {

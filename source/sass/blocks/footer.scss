@@ -234,22 +234,23 @@
 }
 
 .footer__site-navigation ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-between;
   min-width: 470px;
-  max-height: 160px;
+  columns: 2 220px;
+  column-gap: 30px;
 
   @include vp-1023 {
-    flex-wrap: nowrap;
-    min-width: min-content;
-    max-height: min-content;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
   }
 
   @include vp-767 {
     margin: -5px 0 12px 0;
   }
+}
+
+.footer__site-navigation li:nth-child(3n) {
+  break-after: avoid;
 }
 
 .footer__site-navigation li {
@@ -296,7 +297,7 @@
   color: $color-default-white-opacity;
 
   @include vp-767 {
-    margin: -5px 0 17px 0;
+    margin: -4px 0 17px 0;
     font-size: 14px;
     line-height: 19px;
   }
