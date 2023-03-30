@@ -2,10 +2,10 @@
   min-height: 880px;
   background-color: $color-black-pearl;
   background-image: image-set(
-    url("../../img/background/promo-desktop@2x.webp") 2x,
-    url("../../img/background/promo-desktop.webp") 1x,
-    url("../../img/background/promo-desktop@2x.jpg") 2x,
-    url("../../img/background/promo-desktop.jpg") 1x
+    url("./../img/background/promo-desktop@2x.webp") 2x,
+    url("./../img/background/promo-desktop.webp") 1x,
+    url("./../img/background/promo-desktop@2x.jpg") 2x,
+    url("./../img/background/promo-desktop.jpg") 1x
   );
   background-repeat: no-repeat;
   background-position: 50%;
@@ -14,10 +14,10 @@
   @include vp-1023 {
     min-height: 640px;
     background-image: image-set(
-      url("../../img/background/promo-tablet@2x.webp") 2x,
-      url("../../img/background/promo-tablet.webp") 1x,
-      url("../../img/background/promo-tablet@2x.jpg") 2x,
-      url("../../img/background/promo-tablet.jpg") 1x
+      url("./../img/background/promo-tablet@2x.webp") 2x,
+      url("./../img/background/promo-tablet.webp") 1x,
+      url("./../img/background/promo-tablet@2x.jpg") 2x,
+      url("./../img/background/promo-tablet.jpg") 1x
     );
     background-size: cover;
   }
@@ -25,10 +25,10 @@
   @include vp-767 {
     min-height: 560px;
     background-image: image-set(
-      url("../../img/background/promo-mobile@2x.webp") 2x,
-      url("../../img/background/promo-mobile.webp") 1x,
-      url("../../img/background/promo-mobile@2x.jpg") 2x,
-      url("../../img/background/promo-mobile.jpg") 1x
+      url("./../img/background/promo-mobile@2x.webp") 2x,
+      url("./../img/background/promo-mobile.webp") 1x,
+      url("./../img/background/promo-mobile@2x.jpg") 2x,
+      url("./../img/background/promo-mobile.jpg") 1x
     );
     background-size: cover;
   }
