@@ -2263,7 +2263,7 @@ button,
 }
 .modal__content {
   position: relative;
-  max-width: 500px;
+  width: 500px;
   margin: 0 0 0 -16px;
   padding: 37px 40px 45px 40px;
   color: #ffffff;
@@ -2357,6 +2357,7 @@ button,
 
 .modal__content p {
   margin: 0 0 38px 0;
+  max-width: 380px;
 }
 
 .modal__form {
@@ -2374,6 +2375,8 @@ button,
 .modal__form button {
   margin: 5px 0 0 0;
   max-width: 100%;
+  font-size: 15px;
+  letter-spacing: 1.4px;
 }
 
 .form__checkbox--modal label {
