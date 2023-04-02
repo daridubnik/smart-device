@@ -183,6 +183,8 @@
 }
 
 .modal__form button {
+  grid-row-start: 4;
+  grid-row-end: 5;
   margin: 5px 0 0 0;
   max-width: 100%;
   font-size: 15px;
@@ -196,8 +198,8 @@
 }
 
 .modal__form .form__control-mark {
-  top: 0;
   left: 9px;
+  margin: -7px 0 0 0;
 }
 
 .modal__form .input-message {

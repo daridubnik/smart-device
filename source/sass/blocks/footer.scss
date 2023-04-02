@@ -257,10 +257,16 @@
   @include vp-767 {
     margin: -5px 0 12px 0;
   }
-}
 
-.footer__site-navigation li:nth-child(3n) {
-  break-after: avoid;
+  &::after {
+    content: "li";
+    display: list-item;
+    color: transparent;
+
+    @include vp-1023 {
+      content: "";
+    }
+  }
 }
 
 .footer__site-navigation li {

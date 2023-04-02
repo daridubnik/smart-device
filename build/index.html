@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +13,7 @@
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous" />
 </head>
+
 <body>
   <div class="wrapper">
     <header class="header">
@@ -175,40 +177,42 @@
       <section class="feedback" id="feedback">
         <div class="container">
           <div class="feedback__wrapper">
-            <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
-            <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
-            <div data-form-validate="data-form-validate" data-callback="base">
-              <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="custom-input" data-validate-type="text" data-limitation="name"
-                  data-message-base="Поле обязательно к заполнению" data-required="data-required">
-                  <label>
-                    <span class="visually-hidden">Ваше имя</span>
-                    <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
-                  </label>
-                </div>
-                <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
-                  data-message-base="Поле обязательно к заполнению" data-required="data-required">
-                  <label>
-                    <span class="visually-hidden">Ваш номер телефона</span>
-                    <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
-                  </label>
-                </div>
-                <div class="custom-textarea form__textarea" data-validate-type="text">
-                  <label>
-                    <span class="visually-hidden">Ваш вопрос</span>
-                    <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
-                  </label>
-                </div>
-                <button type="submit">Задать вопрос</button>
-                <div class="custom-input custom-input--checkbox form__checkbox" data-validate-type="checkbox"
-                  data-message-base="Необходимо согласие">
-                  <label>
-                    <input type="checkbox" name="consent" value="agree" checked required>
-                    <span class="form__control-mark"></span>
-                    <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-                  </label>
-                </div>
-              </form>
+            <div class="feedback__content">
+              <h2>Остались вопросы? Задайте&nbsp;их&nbsp;нам!</h2>
+              <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
+              <div data-form-validate="data-form-validate" data-callback="base">
+                <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="custom-input" data-validate-type="text" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению" data-required="data-required">
+                    <label>
+                      <span class="visually-hidden">Ваше имя</span>
+                      <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                    </label>
+                  </div>
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                    data-message-base="Поле обязательно к заполнению" data-required="data-required">
+                    <label>
+                      <span class="visually-hidden">Ваш номер телефона</span>
+                      <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
+                    </label>
+                  </div>
+                  <div class="custom-textarea form__textarea" data-validate-type="text">
+                    <label>
+                      <span class="visually-hidden">Ваш вопрос</span>
+                      <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
+                    </label>
+                  </div>
+                  <div class="custom-input custom-input--checkbox form__checkbox" data-validate-type="checkbox"
+                    data-message-base="Необходимо согласие">
+                    <label>
+                      <input type="checkbox" name="consent" value="agree" checked required>
+                      <span class="form__control-mark"></span>
+                      <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                    </label>
+                  </div>
+                  <button type="submit">Задать вопрос</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -333,7 +337,6 @@
                   <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
                 </label>
               </div>
-              <button type="submit">Отправить</button>
               <div class="custom-input custom-input--checkbox form__checkbox form__checkbox--modal"
                 data-validate-type="checkbox" data-message-base="Необходимо согласие">
                 <label>
@@ -342,6 +345,7 @@
                   <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                 </label>
               </div>
+              <button type="submit">Отправить</button>
             </form>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
@@ -353,4 +357,5 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

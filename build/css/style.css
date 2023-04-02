@@ -1382,25 +1382,49 @@ button,
 .feedback__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 165px 0 249px 625px;
+  padding: 165px 0 249px 0;
   max-width: 1220px;
   color: #ffffff;
-  background-color: inherit;
-  background-image: -webkit-image-set(url("./../img/background/paper-airplane@2x.webp") 2x, url("./../img/background/paper-airplane.webp") 1x, url("./../img/background/paper-airplane@2x.png") 2x, url("./../img/background/paper-airplane.png") 1x);
-  background-image: image-set(url("./../img/background/paper-airplane@2x.webp") 2x, url("./../img/background/paper-airplane.webp") 1x, url("./../img/background/paper-airplane@2x.png") 2x, url("./../img/background/paper-airplane.png") 1x);
-  background-repeat: no-repeat;
-  background-position: 0 246px;
-  background-size: 510px 285px;
 }
 @media (max-width: 1023px) {
   .feedback__wrapper {
     padding: 45px 0 125px 0;
-    background-image: none;
   }
 }
 @media (max-width: 767px) {
   .feedback__wrapper {
     padding: 47px 0 89px 0;
+  }
+}
+.feedback__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  background-image: -webkit-image-set(url("./../img/background/paper-airplane@2x.webp") 2x, url("./../img/background/paper-airplane.webp") 1x, url("./../img/background/paper-airplane@2x.png") 2x, url("./../img/background/paper-airplane.png") 1x);
+  background-image: image-set(url("./../img/background/paper-airplane@2x.webp") 2x, url("./../img/background/paper-airplane.webp") 1x, url("./../img/background/paper-airplane@2x.png") 2x, url("./../img/background/paper-airplane.png") 1x);
+  background-repeat: no-repeat;
+  background-position: 0 246px;
+  background-size: 42% auto;
+}
+@media (max-width: 1023px) {
+  .feedback__wrapper::before {
+    content: none;
+  }
+}
+
+.feedback__content {
+  max-width: 585px;
+  width: 50%;
+  margin: 0 10px 0 auto;
+}
+@media (max-width: 1023px) {
+  .feedback__content {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -1747,11 +1771,15 @@ button,
     margin: -5px 0 12px 0;
   }
 }
-
-.footer__site-navigation li:nth-child(3n) {
-  -webkit-column-break-after: avoid;
-     -moz-column-break-after: avoid;
-          break-after: avoid;
+.footer__site-navigation ul::after {
+  content: "li";
+  display: list-item;
+  color: transparent;
+}
+@media (max-width: 1023px) {
+  .footer__site-navigation ul::after {
+    content: "";
+  }
 }
 
 .footer__site-navigation li {
@@ -1906,6 +1934,14 @@ button,
 }
 
 .form button {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
   display: block;
   margin: 15px 0 0 0;
   padding: 15px 15px 11px 15px;
@@ -1929,14 +1965,20 @@ button,
 }
 @media (max-width: 1023px) {
   .form button {
-    max-width: 100%;
     padding: 16px 15px 10px 15px;
+    max-width: 100%;
+    width: 83%;
   }
 }
 @media (max-width: 767px) {
   .form button {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-row-span: 1;
+    grid-row-end: 5;
     margin: 10px 0 0 0;
     padding: 18px 15px 13px 15px;
+    width: 100%;
     line-height: 14px;
     letter-spacing: 0.8px;
   }
@@ -1961,7 +2003,6 @@ button,
   display: flex;
   margin: 29px 0 0 11px;
   padding: 0 0 0 25px;
-  max-width: 260px;
   cursor: pointer;
 }
 @media (max-width: 1023px) {
@@ -1977,8 +2018,9 @@ button,
 
 .form__control-mark {
   position: absolute;
-  top: 7px;
+  top: 50%;
   left: -1px;
+  margin: -9px 0 0 0;
   width: 15px;
   height: 15px;
   border: 1px solid #ffffff;
@@ -2416,6 +2458,10 @@ button,
 }
 
 .modal__form button {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-row-span: 1;
+  grid-row-end: 5;
   margin: 5px 0 0 0;
   max-width: 100%;
   font-size: 15px;
@@ -2429,8 +2475,8 @@ button,
 }
 
 .modal__form .form__control-mark {
-  top: 0;
   left: 9px;
+  margin: -7px 0 0 0;
 }
 
 .modal__form .input-message {
