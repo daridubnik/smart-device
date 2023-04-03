@@ -2565,86 +2565,28 @@ button,
   }
 }
 
-.products__wrapper li {
+.products__item {
   min-height: 650px;
   background-color: #464f5f;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  background-image: -webkit-image-set(url("./../img/products/production-desktop@2x.webp") 2x, url("./../img/products/production-desktop.webp") 1x, url("./../img/products/production-desktop@2x.jpg") 2x, url("./../img/products/production-desktop.jpg") 1x);
-  background-image: image-set(url("./../img/products/production-desktop@2x.webp") 2x, url("./../img/products/production-desktop.webp") 1x, url("./../img/products/production-desktop@2x.jpg") 2x, url("./../img/products/production-desktop.jpg") 1x);
 }
 @media (max-width: 1023px) {
-  .products__wrapper li {
+  .products__item {
     min-height: 250px;
-    background-image: -webkit-image-set(url("./../img/products/production-tablet@2x.webp") 2x, url("./../img/products/production-tablet.webp") 1x, url("./../img/products/production-tablet@2x.jpg") 2x, url("./../img/products/production-tablet.jpg") 1x);
-    background-image: image-set(url("./../img/products/production-tablet@2x.webp") 2x, url("./../img/products/production-tablet.webp") 1x, url("./../img/products/production-tablet@2x.jpg") 2x, url("./../img/products/production-tablet.jpg") 1x);
   }
 }
-@media (max-width: 767px) {
-  .products__wrapper li {
-    background-image: -webkit-image-set(url("./../img/products/production-mobile@2x.webp") 2x, url("./../img/products/production-mobile.webp") 1x, url("./../img/products/production-mobile@2x.jpg") 2x, url("./../img/products/production-mobile.jpg") 1x);
-    background-image: image-set(url("./../img/products/production-mobile@2x.webp") 2x, url("./../img/products/production-mobile.webp") 1x, url("./../img/products/production-mobile@2x.jpg") 2x, url("./../img/products/production-mobile.jpg") 1x);
-  }
-}
-.products__wrapper li:hover, .products__wrapper li:focus {
+.products__item:hover, .products__item:focus {
   outline: 1px solid #abe6ff;
 }
-.products__wrapper li:active {
+.products__item:active {
   outline: 1px solid #00b2ff;
-}
-
-.products__wrapper li:nth-child(3n-1) {
-  background-image: -webkit-image-set(url("./../img/products/mounting-desktop@2x.webp") 2x, url("./../img/products/mounting-desktop.webp") 1x, url("./../img/products/mounting-desktop@2x.jpg") 2x, url("./../img/products/mounting-desktop.jpg") 1x);
-  background-image: image-set(url("./../img/products/mounting-desktop@2x.webp") 2x, url("./../img/products/mounting-desktop.webp") 1x, url("./../img/products/mounting-desktop@2x.jpg") 2x, url("./../img/products/mounting-desktop.jpg") 1x);
-}
-@media (max-width: 1023px) {
-  .products__wrapper li:nth-child(3n-1) {
-    background-image: -webkit-image-set(url("./../img/products/mounting-tablet@2x.webp") 2x, url("./../img/products/mounting-tablet.webp") 1x, url("./../img/products/mounting-tablet@2x.jpg") 2x, url("./../img/products/mounting-tablet.jpg") 1x);
-    background-image: image-set(url("./../img/products/mounting-tablet@2x.webp") 2x, url("./../img/products/mounting-tablet.webp") 1x, url("./../img/products/mounting-tablet@2x.jpg") 2x, url("./../img/products/mounting-tablet.jpg") 1x);
-  }
-}
-@media (max-width: 767px) {
-  .products__wrapper li:nth-child(3n-1) {
-    background-image: -webkit-image-set(url("./../img/products/mounting-mobile@2x.webp") 2x, url("./../img/products/mounting-mobile.webp") 1x, url("./../img/products/mounting-mobile@2x.jpg") 2x, url("./../img/products/mounting-mobile.jpg") 1x);
-    background-image: image-set(url("./../img/products/mounting-mobile@2x.webp") 2x, url("./../img/products/mounting-mobile.webp") 1x, url("./../img/products/mounting-mobile@2x.jpg") 2x, url("./../img/products/mounting-mobile.jpg") 1x);
-  }
-}
-
-.products__wrapper li:nth-child(3n) {
-  background-image: -webkit-image-set(url("./../img/products/accessories-desktop@2x.webp") 2x, url("./../img/products/accessories-desktop.webp") 1x, url("./../img/products/accessories-desktop@2x.jpg") 2x, url("./../img/products/accessories-desktop.jpg") 1x);
-  background-image: image-set(url("./../img/products/accessories-desktop@2x.webp") 2x, url("./../img/products/accessories-desktop.webp") 1x, url("./../img/products/accessories-desktop@2x.jpg") 2x, url("./../img/products/accessories-desktop.jpg") 1x);
-}
-@media (max-width: 1023px) {
-  .products__wrapper li:nth-child(3n) {
-    background-image: -webkit-image-set(url("./../img/products/accessories-tablet@2x.webp") 2x, url("./../img/products/accessories-tablet.webp") 1x, url("./../img/products/accessories-tablet@2x.jpg") 2x, url("./../img/products/accessories-tablet.jpg") 1x);
-    background-image: image-set(url("./../img/products/accessories-tablet@2x.webp") 2x, url("./../img/products/accessories-tablet.webp") 1x, url("./../img/products/accessories-tablet@2x.jpg") 2x, url("./../img/products/accessories-tablet.jpg") 1x);
-  }
-}
-@media (max-width: 767px) {
-  .products__wrapper li:nth-child(3n) {
-    background-image: -webkit-image-set(url("./../img/products/accessories-mobile@2x.webp") 2x, url("./../img/products/accessories-mobile.webp") 1x, url("./../img/products/accessories-mobile@2x.jpg") 2x, url("./../img/products/accessories-mobile.jpg") 1x);
-    background-image: image-set(url("./../img/products/accessories-mobile@2x.webp") 2x, url("./../img/products/accessories-mobile.webp") 1x, url("./../img/products/accessories-mobile@2x.jpg") 2x, url("./../img/products/accessories-mobile.jpg") 1x);
-  }
 }
 
 .products__wrapper a {
   position: relative;
   display: block;
-  padding: 47px 40px;
   width: 100%;
   height: 100%;
   color: #ffffff;
-}
-@media (max-width: 1023px) {
-  .products__wrapper a {
-    padding: 37px 45px;
-  }
-}
-@media (max-width: 767px) {
-  .products__wrapper a {
-    padding: 26px 30px;
-  }
 }
 .products__wrapper a::before {
   content: "";
@@ -2669,49 +2611,101 @@ button,
   }
 }
 
-.products__wrapper h3 {
+.products__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .products__item img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .products__item--production img {
+    -o-object-position: 57% 50%;
+       object-position: 57% 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .products__item--mounting img {
+    -o-object-position: 30% 50%;
+       object-position: 30% 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .products__item--accessories img {
+    -o-object-position: 64% 50%;
+       object-position: 64% 50%;
+  }
+}
+
+.products__item h3 {
+  position: absolute;
+  top: 47px;
+  left: 40px;
+  overflow: scroll;
   margin: 0;
   max-width: 170px;
+  max-height: 545px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 @media (max-width: 1023px) {
-  .products__wrapper h3 {
+  .products__item h3 {
+    top: 37px;
+    left: 45px;
     max-width: 150px;
+    max-height: 180px;
   }
 }
 @media (max-width: 767px) {
-  .products__wrapper h3 {
-    font-size: 18px;
+  .products__item h3 {
+    top: 26px;
+    left: 30px;
     max-width: 135px;
+    font-size: 18px;
   }
 }
 
 .promo {
   min-height: 880px;
-  background-color: #041827;
-  background-image: -webkit-image-set(url("./../img/background/promo-desktop@2x.webp") 2x, url("./../img/background/promo-desktop.webp") 1x, url("./../img/background/promo-desktop@2x.jpg") 2x, url("./../img/background/promo-desktop.jpg") 1x);
-  background-image: image-set(url("./../img/background/promo-desktop@2x.webp") 2x, url("./../img/background/promo-desktop.webp") 1x, url("./../img/background/promo-desktop@2x.jpg") 2x, url("./../img/background/promo-desktop.jpg") 1x);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
 }
 @media (max-width: 1023px) {
   .promo {
     min-height: 640px;
-    background-image: -webkit-image-set(url("./../img/background/promo-tablet@2x.webp") 2x, url("./../img/background/promo-tablet.webp") 1x, url("./../img/background/promo-tablet@2x.jpg") 2x, url("./../img/background/promo-tablet.jpg") 1x);
-    background-image: image-set(url("./../img/background/promo-tablet@2x.webp") 2x, url("./../img/background/promo-tablet.webp") 1x, url("./../img/background/promo-tablet@2x.jpg") 2x, url("./../img/background/promo-tablet.jpg") 1x);
-    background-size: cover;
   }
 }
 @media (max-width: 767px) {
   .promo {
     min-height: 560px;
-    background-image: -webkit-image-set(url("./../img/background/promo-mobile@2x.webp") 2x, url("./../img/background/promo-mobile.webp") 1x, url("./../img/background/promo-mobile@2x.jpg") 2x, url("./../img/background/promo-mobile.jpg") 1x);
-    background-image: image-set(url("./../img/background/promo-mobile@2x.webp") 2x, url("./../img/background/promo-mobile.webp") 1x, url("./../img/background/promo-mobile@2x.jpg") 2x, url("./../img/background/promo-mobile.jpg") 1x);
-    background-size: cover;
+  }
+}
+
+.promo img {
+  position: absolute;
+  width: 100%;
+  height: 880px;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .promo img {
+    height: 640px;
+  }
+}
+@media (max-width: 767px) {
+  .promo img {
+    height: 560px;
+    -o-object-position: 34% 100%;
+       object-position: 34% 100%;
   }
 }
 
@@ -2730,7 +2724,7 @@ button,
 @media (max-width: 767px) {
   .promo__wrapper {
     padding: 150px 0 190px 0;
-    max-width: 400px;
+    max-width: 600px;
   }
 }
 

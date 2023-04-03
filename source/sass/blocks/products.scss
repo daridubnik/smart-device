@@ -63,36 +63,12 @@
   }
 }
 
-.products__wrapper li {
+.products__item {
   min-height: 650px;
   background-color: $color-east-bay;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  background-image: image-set(
-    url("./../img/products/production-desktop@2x.webp") 2x,
-    url("./../img/products/production-desktop.webp") 1x,
-    url("./../img/products/production-desktop@2x.jpg") 2x,
-    url("./../img/products/production-desktop.jpg") 1x
-  );
 
   @include vp-1023 {
     min-height: 250px;
-    background-image: image-set(
-      url("./../img/products/production-tablet@2x.webp") 2x,
-      url("./../img/products/production-tablet.webp") 1x,
-      url("./../img/products/production-tablet@2x.jpg") 2x,
-      url("./../img/products/production-tablet.jpg") 1x
-    );
-  }
-
-  @include vp-767 {
-    background-image: image-set(
-      url("./../img/products/production-mobile@2x.webp") 2x,
-      url("./../img/products/production-mobile.webp") 1x,
-      url("./../img/products/production-mobile@2x.jpg") 2x,
-      url("./../img/products/production-mobile.jpg") 1x
-    );
   }
 
   &:hover,
@@ -105,75 +81,12 @@
   }
 }
 
-.products__wrapper li:nth-child(3n-1) {
-  background-image: image-set(
-    url("./../img/products/mounting-desktop@2x.webp") 2x,
-    url("./../img/products/mounting-desktop.webp") 1x,
-    url("./../img/products/mounting-desktop@2x.jpg") 2x,
-    url("./../img/products/mounting-desktop.jpg") 1x
-  );
-
-  @include vp-1023 {
-    background-image: image-set(
-      url("./../img/products/mounting-tablet@2x.webp") 2x,
-      url("./../img/products/mounting-tablet.webp") 1x,
-      url("./../img/products/mounting-tablet@2x.jpg") 2x,
-      url("./../img/products/mounting-tablet.jpg") 1x
-    );
-  }
-
-  @include vp-767 {
-    background-image: image-set(
-      url("./../img/products/mounting-mobile@2x.webp") 2x,
-      url("./../img/products/mounting-mobile.webp") 1x,
-      url("./../img/products/mounting-mobile@2x.jpg") 2x,
-      url("./../img/products/mounting-mobile.jpg") 1x
-    );
-  }
-}
-
-.products__wrapper li:nth-child(3n) {
-  background-image: image-set(
-    url("./../img/products/accessories-desktop@2x.webp") 2x,
-    url("./../img/products/accessories-desktop.webp") 1x,
-    url("./../img/products/accessories-desktop@2x.jpg") 2x,
-    url("./../img/products/accessories-desktop.jpg") 1x
-  );
-
-  @include vp-1023 {
-    background-image: image-set(
-      url("./../img/products/accessories-tablet@2x.webp") 2x,
-      url("./../img/products/accessories-tablet.webp") 1x,
-      url("./../img/products/accessories-tablet@2x.jpg") 2x,
-      url("./../img/products/accessories-tablet.jpg") 1x
-    );
-  }
-
-  @include vp-767 {
-    background-image: image-set(
-      url("./../img/products/accessories-mobile@2x.webp") 2x,
-      url("./../img/products/accessories-mobile.webp") 1x,
-      url("./../img/products/accessories-mobile@2x.jpg") 2x,
-      url("./../img/products/accessories-mobile.jpg") 1x
-    );
-  }
-}
-
 .products__wrapper a {
   position: relative;
   display: block;
-  padding: 47px 40px;
   width: 100%;
   height: 100%;
   color: $color-default-white;
-
-  @include vp-1023 {
-    padding: 37px 45px;
-  }
-
-  @include vp-767 {
-    padding: 26px 30px;
-  }
 
   &::before {
     content: "";
@@ -198,20 +111,58 @@
   }
 }
 
-.products__wrapper h3 {
+.products__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1023 {
+    height: 250px;
+  }
+}
+
+.products__item--production img {
+  @include vp-767 {
+    object-position: 57% 50%;
+  }
+}
+
+.products__item--mounting img {
+  @include vp-767 {
+    object-position: 30% 50%;
+  }
+}
+
+.products__item--accessories img {
+  @include vp-767 {
+    object-position: 64% 50%;
+  }
+}
+
+.products__item h3 {
+  position: absolute;
+  top: 47px;
+  left: 40px;
+  overflow: scroll;
   margin: 0;
   max-width: 170px;
+  max-height: 545px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   font-family: $ff-roboto-condensed;
 
   @include vp-1023 {
+    top: 37px;
+    left: 45px;
     max-width: 150px;
+    max-height: 180px;
   }
 
   @include vp-767 {
-    font-size: 18px;
+    top: 26px;
+    left: 30px;
     max-width: 135px;
+    font-size: 18px;
   }
 }
