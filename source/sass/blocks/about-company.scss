@@ -97,7 +97,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: $color-columbia-blue;
     color: $color-black-pearl;
     border: 1px solid $color-columbia-blue;

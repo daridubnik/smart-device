@@ -661,7 +661,7 @@ button,
     min-height: 35px;
   }
 }
-.about-company__full-text button:hover, .about-company__full-text button:focus {
+.about-company__full-text button:hover, .about-company__full-text button:focus-visible {
   background-color: #abe6ff;
   color: #041827;
   border: 1px solid #abe6ff;
@@ -1658,10 +1658,14 @@ button,
   }
 }
 
-.footer__social svg:hover, .footer__social svg:focus,
-.footer__links a:hover,
-.footer__links a:focus {
+.footer__social svg:hover,
+.footer__links a:hover {
   color: #abe6ff;
+}
+.footer__social svg:focus,
+.footer__links a:focus {
+  color: #00b2ff;
+  outline: none;
 }
 .footer__social svg:active,
 .footer__links a:active {
@@ -2056,7 +2060,7 @@ button,
   border: 1px solid #041827;
 }
 
-.form__checkbox input:focus + .form__control-mark {
+.form__checkbox input:focus-visible + .form__control-mark {
   border: 1.5px solid #041827;
 }
 
