@@ -26,27 +26,50 @@
 .feedback__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 165px 0 249px 625px;
+  padding: 165px 0 249px 0;
   max-width: 1220px;
   color: $color-default-white;
-  background-color: inherit;
-  background-image: image-set(
-    url("./../img/background/paper-airplane@2x.webp") 2x,
-    url("./../img/background/paper-airplane.webp") 1x,
-    url("./../img/background/paper-airplane@2x.png") 2x,
-    url("./../img/background/paper-airplane.png") 1x
-  );
-  background-repeat: no-repeat;
-  background-position: 0 246px;
-  background-size: 510px 285px;
 
   @include vp-1023 {
     padding: 45px 0 125px 0;
-    background-image: none;
   }
 
   @include vp-767 {
     padding: 47px 0 89px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    background-image: image-set(
+      url("./../img/background/paper-airplane@2x.webp") 2x,
+      url("./../img/background/paper-airplane.webp") 1x,
+      url("./../img/background/paper-airplane@2x.png") 2x,
+      url("./../img/background/paper-airplane.png") 1x
+    );
+    background-repeat: no-repeat;
+    background-position: 0 246px;
+    background-size: 42% auto;
+
+    @include vp-1023 {
+      content: none;
+    }
+  }
+}
+
+.feedback__content {
+  max-width: 585px;
+  width: 50%;
+  margin: 0 10px 0 auto;
+
+  @include vp-1023 {
+    max-width: 100%;
+    width: 100%;
   }
 }
 

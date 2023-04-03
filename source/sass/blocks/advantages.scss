@@ -1,3 +1,13 @@
+.advantages .container {
+  @include vp-1023 {
+    padding: 0 54px 0 46px;
+  }
+
+  @include vp-767 {
+    padding: 0 25px;
+  }
+}
+
 .advantages__wrapper {
   margin: 0 auto;
   padding: 120px 0 60px 0;
@@ -25,8 +35,7 @@
   }
 
   @include vp-767 {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -126,5 +135,25 @@
   @include vp-767 {
     margin: 0 0 13px 0;
     line-height: 28.1px;
+  }
+}
+
+.advantages__item--fourth-card svg {
+  @include vp-1023 {
+    margin: 0 0 7px 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 13px 0;
+  }
+}
+
+.advantages__item--fourth-card h3 {
+  @include vp-1023 {
+    margin: 0 0 7px 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 13px 0;
   }
 }

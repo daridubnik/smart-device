@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +13,7 @@
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous" />
 </head>
+
 <body>
   <div class="wrapper">
     <header class="header">
@@ -24,24 +26,20 @@
             </picture>
           </a>
           <div class="header__contacts">
-            <div class="header__contacts-link">
-              <a href="mailto:info@sd.ru">
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Конверт">
-                  <use href="./img/sprite.svg#icon-letter"></use>
-                </svg>
-                <span>info@sd.ru</span>
-              </a>
-            </div>
-            <div class="header__contacts-link">
-              <a href="tel:+74950005252">
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                  role="img" aria-label="Телефонная трубка">
-                  <use href="./img/sprite.svg#icon-phone"></use>
-                </svg>
-                <span>+7 (495) 000 52 52</span>
-              </a>
-            </div>
+            <a href="mailto:info@sd.ru">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Конверт">
+                <use href="./img/sprite.svg#icon-letter"></use>
+              </svg>
+              <span>info@sd.ru</span>
+            </a>
+            <a href="tel:+74950005252">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Телефонная трубка">
+                <use href="./img/sprite.svg#icon-phone"></use>
+              </svg>
+              <span>+7 (495) 000 52 52</span>
+            </a>
           </div>
           <div class="header__button">
             <a href="#" data-open-modal="modal">Заказать звонок</a>
@@ -52,6 +50,16 @@
     <main>
       <h1 class="visually-hidden">Печатные платы и комплектующие Smart Device</h1>
       <section class="promo">
+        <picture>
+          <source type="image/webp" media="(max-width: 1023px)" srcset="
+          ./img/background/promo-tablet.webp, ./img/background/promo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="
+          ./img/background/promo-desktop.webp, ./img/background/promo-desktop@2x.webp 2x">
+          <source media="(max-width: 1023px)" srcset="
+          ./img/background/promo-tablet.jpg, ./img/background/promo-tablet@2x.jpg 2x">
+          <img src="./img/background/promo-desktop.jpg" srcset="./img/background/promo-desktop@2x.jpg 2x" width="1920"
+            height="880" alt="Печатные платы.">
+        </picture>
         <div class="container">
           <div class="promo__wrapper">
             <h2>Печатные платы</h2>
@@ -100,7 +108,7 @@
                 </div>
               </li>
               <li>
-                <div class="advantages__item advantages__item--even-pair">
+                <div class="advantages__item advantages__item--even-pair advantages__item--fourth-card">
                   <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                     role="img" aria-label="Ценник">
                     <use href="./img/sprite.svg#icon-price-tag"></use>
@@ -153,19 +161,64 @@
             <h2 class="products__title-desktop-tablet">Smart Device предлагает следующие товары и услуги</h2>
             <h2 class="products__title-mobile">Товары и услуги Smart Device</h2>
             <ul>
-              <li>
+              <li class="products__item products__item--production">
                 <a href="#" aria-label="Перейти в раздел">
                   <h3>Производство печатных плат</h3>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="
+                      ./img/products/production-mobile.webp, ./img/products/production-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="
+                      ./img/products/production-tablet.webp, ./img/products/production-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="
+                      ./img/products/production-desktop.webp, ./img/products/production-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="
+                  ./img/products/production-mobile.jpg, ./img/products/production-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="
+                      ./img/products/production-tablet.jpg, ./img/products/production-tablet@2x.jpg 2x">
+                    <img src="./img/products/production-desktop.jpg"
+                      srcset="./img/products/production-desktop@2x.jpg 2x" width="350" height="650"
+                      alt="Печатные платы.">
+                  </picture>
                 </a>
               </li>
-              <li>
+              <li class="products__item products__item--mounting">
                 <a href="#" aria-label="Перейти в раздел">
                   <h3>Монтаж печатных плат</h3>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="
+                      ./img/products/mounting-mobile.webp, ./img/products/mounting-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="
+                      ./img/products/mounting-tablet.webp, ./img/products/mounting-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="
+                      ./img/products/mounting-desktop.webp, ./img/products/mounting-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="
+                  ./img/products/mounting-mobile.jpg, ./img/products/mounting-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="
+                      ./img/products/mounting-tablet.jpg, ./img/products/mounting-tablet@2x.jpg 2x">
+                    <img src="./img/products/mounting-desktop.jpg" srcset="./img/products/mounting-desktop@2x.jpg 2x"
+                      width="350" height="650" alt="Печатные платы.">
+                  </picture>
                 </a>
               </li>
-              <li>
+              <li class="products__item products__item--accessories">
                 <a href="#" aria-label="Перейти в раздел">
                   <h3>Комплектующие для светотехники</h3>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="
+                      ./img/products/accessories-mobile.webp, ./img/products/accessories-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="
+                      ./img/products/accessories-tablet.webp, ./img/products/accessories-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="
+                      ./img/products/accessories-desktop.webp, ./img/products/accessories-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="
+                  ./img/products/accessories-mobile.jpg,
+                  ./img/products/accessories-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="
+                      ./img/products/accessories-tablet.jpg, ./img/products/accessories-tablet@2x.jpg 2x">
+                    <img src="./img/products/accessories-desktop.jpg"
+                      srcset="./img/products/accessories-desktop@2x.jpg 2x" width="350" height="650"
+                      alt="Печатные платы.">
+                  </picture>
                 </a>
               </li>
             </ul>
@@ -175,40 +228,42 @@
       <section class="feedback" id="feedback">
         <div class="container">
           <div class="feedback__wrapper">
-            <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
-            <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
-            <div data-form-validate="data-form-validate" data-callback="base">
-              <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="custom-input" data-validate-type="text" data-limitation="name"
-                  data-message-base="Поле обязательно к заполнению" data-required="data-required">
-                  <label>
-                    <span class="visually-hidden">Ваше имя</span>
-                    <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
-                  </label>
-                </div>
-                <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
-                  data-message-base="Поле обязательно к заполнению" data-required="data-required">
-                  <label>
-                    <span class="visually-hidden">Ваш номер телефона</span>
-                    <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
-                  </label>
-                </div>
-                <div class="custom-textarea form__textarea" data-validate-type="text">
-                  <label>
-                    <span class="visually-hidden">Ваш вопрос</span>
-                    <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
-                  </label>
-                </div>
-                <button type="submit">Задать вопрос</button>
-                <div class="custom-input custom-input--checkbox form__checkbox" data-validate-type="checkbox"
-                  data-message-base="Необходимо согласие">
-                  <label>
-                    <input type="checkbox" name="consent" value="agree" checked required>
-                    <span class="form__control-mark"></span>
-                    <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-                  </label>
-                </div>
-              </form>
+            <div class="feedback__content">
+              <h2>Остались вопросы? Задайте&nbsp;их&nbsp;нам!</h2>
+              <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
+              <div data-form-validate="data-form-validate" data-callback="base">
+                <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="custom-input" data-validate-type="text" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению" data-required="data-required">
+                    <label>
+                      <span class="visually-hidden">Ваше имя</span>
+                      <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                    </label>
+                  </div>
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                    data-message-base="Поле обязательно к заполнению" data-required="data-required">
+                    <label>
+                      <span class="visually-hidden">Ваш номер телефона</span>
+                      <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
+                    </label>
+                  </div>
+                  <div class="custom-textarea form__textarea" data-validate-type="text">
+                    <label>
+                      <span class="visually-hidden">Ваш вопрос</span>
+                      <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
+                    </label>
+                  </div>
+                  <div class="custom-input custom-input--checkbox form__checkbox" data-validate-type="checkbox"
+                    data-message-base="Необходимо согласие">
+                    <label>
+                      <input type="checkbox" name="consent" value="agree" checked required>
+                      <span class="form__control-mark"></span>
+                      <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                    </label>
+                  </div>
+                  <button type="submit">Задать вопрос</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -218,7 +273,7 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__social">
-            <a href="index.html">
+            <a class="footer__logo" href="index.html">
               <img src="./img/logo/logo-full.svg" width="215" height="55" alt="Логотип Smart Device.">
             </a>
             <ul>
@@ -310,7 +365,7 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <h2>Закажите звонок</h2>
-          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
           <div data-form-validate="data-form-validate" data-callback="base">
             <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
               <div class="custom-input" data-validate-type="text" data-limitation="name"
@@ -333,7 +388,6 @@
                   <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
                 </label>
               </div>
-              <button type="submit">Отправить</button>
               <div class="custom-input custom-input--checkbox form__checkbox form__checkbox--modal"
                 data-validate-type="checkbox" data-message-base="Необходимо согласие">
                 <label>
@@ -342,6 +396,7 @@
                   <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                 </label>
               </div>
+              <button type="submit">Отправить</button>
             </form>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
@@ -353,4 +408,5 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

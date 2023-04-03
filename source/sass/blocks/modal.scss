@@ -35,11 +35,9 @@
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     min-height: 100%;
-    margin: 86px 0 0 0;
-    padding: 60px 50px;
 
     @include vp-1023 {
       margin: 0;
@@ -65,7 +63,7 @@
   &__content {
     position: relative;
 
-    max-width: 500px;
+    width: 500px;
     margin: 0 0 0 -16px;
     padding: 37px 40px 45px 40px;
 
@@ -96,6 +94,14 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &::after {
       position: absolute;
@@ -163,6 +169,7 @@
 
 .modal__content p {
   margin: 0 0 38px 0;
+  max-width: 380px;
 }
 
 .modal__form {
@@ -176,8 +183,12 @@
 }
 
 .modal__form button {
+  grid-row-start: 4;
+  grid-row-end: 5;
   margin: 5px 0 0 0;
   max-width: 100%;
+  font-size: 15px;
+  letter-spacing: 1.4px;
 }
 
 .form__checkbox--modal label {
@@ -187,8 +198,8 @@
 }
 
 .modal__form .form__control-mark {
-  top: 0;
   left: 9px;
+  margin: -7px 0 0 0;
 }
 
 .modal__form .input-message {
