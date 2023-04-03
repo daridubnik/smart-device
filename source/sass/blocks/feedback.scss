@@ -57,7 +57,7 @@
     background-size: 42% auto;
 
     @include vp-1023 {
-      content: none;
+      display: none;
     }
   }
 }
