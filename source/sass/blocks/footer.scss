@@ -152,9 +152,13 @@
 
 .footer__social svg,
 .footer__links a {
-  &:hover,
-  &:focus {
+  &:hover {
     color: $color-columbia-blue;
+  }
+
+  &:focus {
+    color: $color-deep-sky-blue;
+    outline: none;
   }
 
   &:active {
