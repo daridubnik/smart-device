@@ -64,11 +64,13 @@
 
 .feedback__content {
   max-width: 585px;
+  min-width: 495px;
   width: 50%;
   margin: 0 10px 0 auto;
 
   @include vp-1023 {
     max-width: 100%;
+    min-width: 270px;
     width: 100%;
   }
 }
