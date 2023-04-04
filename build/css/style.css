@@ -1418,12 +1418,14 @@ button,
 
 .feedback__content {
   max-width: 585px;
+  min-width: 495px;
   width: 50%;
   margin: 0 10px 0 auto;
 }
 @media (max-width: 1023px) {
   .feedback__content {
     max-width: 100%;
+    min-width: 270px;
     width: 100%;
   }
 }
@@ -1966,6 +1968,7 @@ button,
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .form button {
@@ -2176,7 +2179,7 @@ button,
 }
 @media (max-width: 767px) {
   .header__contacts {
-    margin: 10px 0;
+    margin: 10px 10px 10px 0;
   }
 }
 
@@ -2195,12 +2198,6 @@ button,
     padding: 10px;
     min-width: 40px;
     min-height: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header__contacts a:last-child {
-    margin: 0 10px 0 0;
   }
 }
 
@@ -2568,7 +2565,6 @@ button,
   .products__wrapper ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
     gap: 30px;
     justify-items: stretch;
   }
